@@ -1,0 +1,45 @@
+// ------------------------------------------------------------
+// Aligment and meter
+// ------------------------------------------------------------
+
+.max-meter 				{ max-width: 800px; }
+.max-meter--center 		{ margin-left: auto; margin-right: auto; }
+
+.align-center 			{ text-align: center; }
+.align-left 			{ text-align: left; }
+.align-right 			{ text-align: right; }
+
+
+// ------------------------------------------------------------
+// Additional goodies
+// ------------------------------------------------------------
+
+.is-typeset--additionals {
+	> p:first-of-type {
+		color: $heading-color;
+		font-size: 125%;
+		@include leading($base-font-size*1.05);
+	}
+}
+
+// ------------------------------------------------------------
+// Blockquotes
+// ------------------------------------------------------------
+
+
+.as-blockquote {
+	position: relative;
+	p {
+		@include font-size($quote);
+	}
+	cite {
+		display: block;
+		font-weight: 500;
+	}
+}
+
+.is-typeset {
+	blockquote {
+		@extend .as-blockquote;
+	}
+}

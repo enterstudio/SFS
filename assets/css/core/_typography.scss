@@ -1,0 +1,110 @@
+// ------------------------------------------------------------
+// Core typography
+// ------------------------------------------------------------
+
+.as-heading-headline { 
+	@include font-size($alpha); 
+	@include leading($alpha/1.5); 
+} 
+.as-heading-headline--leader { 
+	@include leader($alpha/1.5); 
+} 
+.as-heading-headline--trailer { 
+	@include trailer($alpha/1.5); 
+} 
+
+.as-heading-large { 
+	@include font-size($beta); 
+} 
+.as-heading-large--leader { 
+	@include leader($beta);
+} 
+.as-heading-large--trailer { 
+	@include trailer($beta); 
+} 
+	
+.as-heading-medium { 
+	@include font-size($gamma);  
+} 	
+.as-heading-medium--leader 	{ 
+	@include leader($gamma);
+}	
+.as-heading-medium--trailer	{ 
+	@include trailer($gamma); 
+} 
+
+.as-heading-small { 
+	@include font-size($delta); 
+} 	
+.as-heading-small--leader 	{ 
+	@include leader($delta);
+}		
+.as-heading-small--trailer 	{ 
+	@include trailer($delta); 
+}
+
+
+// ------------------------------------------------------------
+// Other text
+// ------------------------------------------------------------
+
+.as-para 							{ @include font-size($para); }
+.as-para--typeset 					{ @include trailer($base-font-size); }
+
+.as-unordered-list 					{ @include unordered; 	@include padding-left(30); 	li { @extend .as-list-item--typeset; } }
+.as-ordered-list 					{ @include ordered; 	@include padding-left(35); 	li { @extend .as-list-item--typeset; } }
+.as-nobullet-list 					{ @include nobullet; 	li { @extend .as-list-item--typeset; } }
+
+.as-list--typeset 					{ @include trailer($para); @include leader($para); }
+.as-unordered-list--typeset 		{ @extend .as-list--typeset; }
+.as-ordered-list--typeset 			{ @extend .as-list--typeset; }
+.as-list-item--typeset 				{ @include trailer($para/2); }
+
+
+// ------------------------------------------------------------
+// Use on parent element to style elements within. E.g an article page
+// ------------------------------------------------------------
+
+.is-typeset {
+	
+	.headline { 
+		@extend .as-heading-headline; 
+		@extend .as-heading-headline--trailer; 
+	} 
+	
+	h1, h2, h3 	{ 
+		@extend .as-heading-large; 
+		@extend .as-heading-large--leader; 
+		@extend .as-heading-large--trailer; 
+	} 	
+	
+	h4, h5	{ 
+		@extend .as-heading-medium;
+		 @extend .as-heading-medium--leader; 
+		 @extend .as-heading-medium--trailer; 
+	}
+	
+	h6	{ 
+		@extend .as-heading-small; 
+		@extend .as-heading-small--leader; 
+		@extend .as-heading-small--trailer; 
+	}
+	
+	li 			{ @extend .as-para; } 	 	 	
+	p 			{ @extend .as-para; @extend .as-para--typeset; }
+	ol 			{ @extend .as-ordered-list; @extend .as-ordered-list--typeset; }
+	ul 			{ @extend .as-unordered-list; @extend .as-unordered-list--typeset; }
+	
+	// Tear out the initial top margin to allow things to flush together
+	> h1:first-child, 
+	> h2:first-child, 
+	> h3:first-child, 
+	> h4:first-child,
+	> h5:first-child,
+	> h6:first-child  { 
+		margin-top: 0; 
+	}
+}
+
+// No bottom. Like a reverse Kim Kardashian
+.is-typeset--no-trailing { p, li, ul, ol { &:last-child { margin-bottom: 0; } } }

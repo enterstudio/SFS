@@ -1,0 +1,64 @@
+// Form styles
+// See form-items sub–folder for individuals
+// ------------------------------------------------------------
+
+.form {
+	position: relative;
+}
+
+// Sections / fieldsets
+.form-section {
+	@include padding-all($internal-spacing);
+	background: #fff;
+	border: $default-border-width solid $default-border-color;
+}
+
+// Labels
+.form-label {
+	@include trailer(6);
+	&.form-label--hidden {
+		position: absolute !important;
+	    clip: rect(1px, 1px, 1px, 1px);
+	    padding: 0px;
+	    border: 0 !important;
+	    height: 1px !important;
+	    width: 1px !important;
+	    overflow: hidden;
+	}
+}
+
+// Form field wrapper
+.form-field {
+	position: relative;
+	@extend %pie-clearfix;
+}
+
+// Space the form field
+.form-field--spaced {
+	@include padding-leader($internal-spacing);
+}
+
+// Standard form elements  
+.form-item {
+	@include padding-all($internal-spacing/2);
+	display: block;
+	border: $default-border-width solid $default-border-color;
+	appearance: none;
+	background-color: #fff;
+	&::focus-inner {
+	    border: 0;
+	    padding: 0;
+	}
+	&:focus {
+		outline: none;
+		border-color: $action;
+	}
+}
+
+// Get individul items
+// -----------------------
+
+@import "form-items/checkbox-radio"; 
+@import "form-items/select"; 
+@import "form-items/validation"; 
+

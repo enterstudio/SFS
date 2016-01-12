@@ -1,0 +1,70 @@
+// ------------------------------------------------------------
+// Select
+// ------------------------------------------------------------
+
+.form-field__select-dropdown {
+	width: 100%;
+	height: $internal-spacing-pixel*2;
+	overflow: hidden;
+	background-color: #fff;
+	border: $default-border-width solid $default-border-color;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	@include font-size($para);
+	&:hover, &:focus {
+		border-color: $action;
+		cursor: pointer;
+	}
+	&:after {
+		background: url(../svg/png/icon-sort-dark.png) transparent no-repeat 0 0;
+		background: url(../svg/source/icon-sort-dark.svg) transparent no-repeat 0 0;
+		background-size: 14px 14px;
+		height: 14px;
+		width: 14px;
+		display: block;
+		position: absolute;
+		top: 12px;
+		right: 8px;
+		content: "";
+		z-index: 3;
+		html.ie9 & {
+			display: none;
+		}
+	}
+	select {
+		background-color: #fff;
+		color: $form-label-color;
+		width: 99%;
+		@include padding-left($internal-spacing/2);
+		border: 0;
+		border-radius: 0;
+		height: 100%;
+		position: relative;
+		z-index: 10;
+		vertical-align: middle;
+		text-overflow: '';
+		appearance: none;
+		position: relative;
+		z-index: 1;
+		-moz-appearance: window; // Hides firefox native select arrow
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus {
+			outline: none;
+		}
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+// Mozilla hack for dropdown text placement
+@-moz-document url-prefix() {
+	.select-dropdown {
+		select {
+			margin-top: 3px;
+		}
+	}
+}

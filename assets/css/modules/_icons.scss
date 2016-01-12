@@ -1,0 +1,51 @@
+// ------------------------------------------------------------
+// General icon control
+// ------------------------------------------------------------
+
+.icon { 
+	display: inline-block; 
+	vertical-align: middle; 
+	overflow: hidden;
+	position: relative;
+	line-height: 0; // Bit dirty but works fine for keeping things inline
+	// Position text within em and removed from view
+	em {
+		position: absolute;
+		top: -9999em;
+		display: block;
+	}
+}
+
+
+// ------------------------------------------------------------
+// Specific sizes
+// ------------------------------------------------------------
+
+$icon-sizes: 16, 24;
+
+@each $icon-size in $icon-sizes {
+    .icon--#{$icon-size} {
+    	width: ($icon-size) + px;
+    	height: ($icon-size) + px;
+    	svg {
+	    	width: ($icon-size) + px;
+			height: ($icon-size) + px;
+    	}
+    }
+    
+    // Uncomment for padded variation
+    
+    //.icon--padded-#{$icon-size} {
+    	//background-size: ($icon-size/2) + px ($icon-size/2) + px;
+    	//svg {
+		  //  width: ($icon-size/2) + px;
+		  // height: ($icon-size/2) + px;
+		  // margin-left: ($icon-size/4) + px;
+		  // margin-top: ($icon-size/4) + px;
+    	//}
+    //}
+}
+
+// ------------------------------------------------------------
+// Per icon control as needed
+// ------------------------------------------------------------

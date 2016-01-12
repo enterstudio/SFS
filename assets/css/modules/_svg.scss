@@ -1,0 +1,15 @@
+// ------------------------------------------------------------
+// SVG
+// For fine grained control and animations
+// See specific grunticon set-up for basic use (http://www.grunticon.com/)
+// ------------------------------------------------------------
+
+.as-svg {
+	@extend .icon;
+}
+
+// Example use
+.svg-example {
+	width: 200px;
+	height: 200px;
+}

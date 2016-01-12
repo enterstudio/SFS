@@ -1,0 +1,17 @@
+// ------------------------------------------------------------
+// Colours and fills
+// Add more to the array to populate consistent names across
+// colors, fills (aka background) and rules (aka borders)
+// ------------------------------------------------------------
+
+@each $number, $color in 
+		('facebook', $facebook-color),
+		('twitter', $twitter-color),
+	{
+	.color-#{$number} {
+		color: $color;
+	}
+	.fill-#{$number} {
+		background-color: $color;
+	}
+}

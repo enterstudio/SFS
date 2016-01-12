@@ -1,0 +1,52 @@
+@import "core/reset";
+@import "core/settings";
+@import "core/mixins";
+@import "core/placeholders";
+
+/* ------------------------------------------------------------ */
+
+html {
+	font-size: 10px;
+	font-size: 62.5%;
+	@include respond-to-max(800px) {
+		‑webkit‑text‑size‑adjust: 100%; // Mobile (iPhone) can sometimes be a dick about font resizing. Adding to a max-media query solves it
+	}
+}
+
+body {
+	@extend %font-body;
+	font-size: $base-font-size + px; // Helps with flicker, first load of font sizes
+	@include leading($base-font-size);
+	background: $body-color;
+	color: $base-color;
+}
+
+/* :: Granular and Modular styles */
+/* ------------------------------------------------------------ */
+
+// Import core modules that pertain to styling
+@import "core/base";
+@import "core/forms";
+@import "core/fonts";
+@import "core/typography";
+@import "core/branding";
+
+// Import all modules
+@import "modules/*";
+
+// Import all items required further up the stack
+@import "modules/priority-extends/*";
+
+
+/* ::Print */
+/* ------------------------------------------------------------ */
+
+@media print {
+	body {
+		font-size: percentage(10 / 16);
+		color: #000!important;
+	}
+	*[role="navigation"] {
+		display: none;
+	}
+}
