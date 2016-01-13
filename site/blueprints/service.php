@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Default page
+title: Service
 pages: false
-files: false
+files: true
 fields:
   title:
     label: Title

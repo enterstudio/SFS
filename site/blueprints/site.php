@@ -14,7 +14,7 @@ fields:
     label: Main contact email
     type: email
   contact_address:
-    label: Address
+    label: Registered address
     type: text
   description:
     label: Site description (for search engines)

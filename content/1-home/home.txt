@@ -1,8 +1,10 @@
-Title: Home
+Title: Sports Financial Services
 
 ----
 
-Text: Yay! If you are seeing this, the installation of Kirby worked. :)
+Text: 
+
+Yay! If you are seeing this, the installation of Kirby worked. :)
 
 ## Get started
 
@@ -13,3 +15,35 @@ Text: Yay! If you are seeing this, the installation of Kirby worked. :)
 - (link: http://getkirby.com/support text: Get in contact) if you need support.
 
 **Have fun with Kirby!**
+
+----
+
+Hero-text: Hero text here
+
+----
+
+Hero-image: 
+
+----
+
+Services-text: Services text here
+
+----
+
+Services-quote: Quote here
+
+----
+
+Services-citation: Citation here
+
+----
+
+Case-study: 
+
+----
+
+Section1-image: 
+
+----
+
+About-text: About text here

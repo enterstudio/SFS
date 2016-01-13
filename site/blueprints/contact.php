@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Default page
+title: Contact
 pages: false
 files: false
 fields:

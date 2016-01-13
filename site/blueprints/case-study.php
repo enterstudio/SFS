@@ -1,8 +1,15 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Default page
-pages: false
-files: false
+title: Case study
+files: true
+  max: 5
+  size: 500000
+  type:
+    - image
+  fields: 
+    alt_text:
+      label: Alternative text
+      type: text
 fields:
   title:
     label: Title

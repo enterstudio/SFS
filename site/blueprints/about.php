@@ -1,7 +1,9 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Default page
-pages: false
+title: About
+pages: true
+  template: case-study
+  max: 3
 files: false
 fields:
   title:

@@ -1,7 +1,9 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Default page
-pages: false
+title: Services
+pages: true
+  template: service
+  max: 5
 files: false
 fields:
   title:
