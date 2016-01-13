@@ -8,3 +8,4 @@ language: en
 role: admin
 history:
   - home
+  - services/project-management

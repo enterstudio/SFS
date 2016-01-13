@@ -2,4 +2,20 @@ Title: Project management
 
 ----
 
-Text: 
+Text: Page text
+
+----
+
+Service-quote: Testimonial
+
+----
+
+Service-citation: Citation
+
+----
+
+Description: 
+
+----
+
+Keywords: 

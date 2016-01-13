@@ -16,12 +16,20 @@ fields:
     label: Title
     type:  text
   text:
-    label: Text
+    label: Page text
     type:  textarea
     buttons:
       - bold
       - link
       - email
+  service_quote:
+    label: Testimonial
+    type: text
+    required: true
+  service_citation:
+    label: Testimonial citation
+    type: text
+    required: false
   line-seo:
     type: line
   description:

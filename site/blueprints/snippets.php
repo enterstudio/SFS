@@ -27,6 +27,10 @@ fields:
     type: select
     options: images
   logo_c:
-    label: Logo image position 1
+    label: Logo image position 3
+    type: select
+    options: images
+  logo_d:
+    label: Logo image position 4
     type: select
     options: images
