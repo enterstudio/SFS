@@ -9,9 +9,10 @@
         'actions' => [
             [
                 '_action' => 'email',
-                'to'      => (string) $page->email(),
-                'sender'  => 'hello@sportfinancialservices.co.uk',
-                'subject' => $site->title()->html() . ' - message from the contact form'
+                '_from'   => 'email',
+                'to'      => 'petercolesdc@gmail.com',
+                'sender'  => 'info@sportfinancialservices.co.uk',
+                'subject' => 'Message from website contact form'
             ]
         ]
     ]);

@@ -3,7 +3,7 @@
 <h1><?php echo $page->title()->html() ?></h1>
 <?php echo $page->text()->kirbytext() ?>
 
-<form action="<?php echo $page->url()?>#form" method="post">
+<form action="<?php echo $page->url()?>#form" method="post" id="contact-form">
 	
 	<label for="message">Your message</label>
     <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
