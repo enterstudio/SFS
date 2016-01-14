@@ -43,7 +43,7 @@ a[href^="tel"]{
 // General type controllers
 // ------------------------------------------------------------
 
-h1,h2,h3,h4,h5,h6 	{ color: $heading-color; @extend %font-heading; @include font-size($beta); }
+h1,h2,h3,h4,h5,h6 	{ color: $heading-color; @extend %font-heading; @include font-size($beta); @include leading($beta/1.25);  }
 p,li,span,cite,a	{ @include font-size($para); }
 ul, ol 				{ @include nobullet; } 						
 li 					{ line-height: inherit; }		

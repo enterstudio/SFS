@@ -12,8 +12,13 @@
 	@include leader($internal-spacing/2);
 	@include respond-to($d-vp) {
 		margin-top: 0;
+		@include padding-all($internal-spacing/2);
+		@include padding-leader(25);
+		transform: translateY(-2.5rem);
+	}
+	@include respond-to($max-grid) {
 		@include padding-all($internal-spacing);
-		@include padding-leader(50);
-		transform: translateY(-5rem);
+		@include padding-leader(35);
+		transform: translateY(-3.5rem);
 	}
 }

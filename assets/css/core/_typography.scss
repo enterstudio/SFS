@@ -12,14 +12,17 @@
 		max-width: 40px;
 		@extend .fill-deadpool;
 		height: $default-border-width;
-		margin-bottom: 12px;
+		margin-bottom: 16px;
 		.fill-deadpool & {
 			@extend .fill-knight;
 		}
 	}
-	&.align-center {
-		margin-left: auto;
-		margin-right: auto;
+	&.align-center,
+	.align-center & {
+		&:before {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 
@@ -27,6 +30,9 @@
 	@include font-size($alpha); 
 	@include leading($alpha); 
 	@extend %as-heading-rule-before;
+	&:before {
+		margin-bottom: 32px;
+	}
 } 
 .as-heading-headline--leader { 
 	@include leader($alpha); 
@@ -60,8 +66,8 @@
 } 
 
 .as-heading-small { 
-	@include font-size($delta); 
-	line-height: 1; 
+	@include font-size($delta);
+	@include leading($delta); 
 	@extend %as-heading-rule-before;
 } 	
 .as-heading-small--leader 	{ 

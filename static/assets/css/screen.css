@@ -123,7 +123,8 @@ a[href^="tel"] {
 
 h1, h2, h3, h4, h5, h6 {
   color: #120000;
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  line-height: 0.9765625; }
 
 p, li, span, cite, a {
   font-size: 1.6rem; }
@@ -232,14 +233,20 @@ input[type="file"] {
     min-width: 20px;
     max-width: 40px;
     height: 2px;
-    margin-bottom: 12px; }
-  .align-center.as-heading-headline, .is-typeset .align-center.headline, .align-center.as-heading-large, .is-typeset h1.align-center, .is-typeset h2.align-center, .is-typeset h3.align-center, .is-typeset h4.align-center, .is-typeset h5.align-center, .is-typeset h6.align-center, .align-center.as-heading-medium, .align-center.as-heading-small {
+    margin-bottom: 16px; }
+  .align-center.as-heading-headline:before,
+  .is-typeset .align-center.headline:before, .align-center.as-heading-large:before,
+  .is-typeset h1.align-center:before, .is-typeset h2.align-center:before, .is-typeset h3.align-center:before, .is-typeset h4.align-center:before, .is-typeset h5.align-center:before, .is-typeset h6.align-center:before, .align-center.as-heading-medium:before,
+  .align-center.as-heading-small:before,
+  .align-center .as-heading-headline:before, .align-center .is-typeset .headline:before, .is-typeset .align-center .headline:before, .align-center .as-heading-large:before, .align-center .is-typeset h1:before, .is-typeset .align-center h1:before, .align-center .is-typeset h2:before, .is-typeset .align-center h2:before, .align-center .is-typeset h3:before, .is-typeset .align-center h3:before, .align-center .is-typeset h4:before, .is-typeset .align-center h4:before, .align-center .is-typeset h5:before, .is-typeset .align-center h5:before, .align-center .is-typeset h6:before, .is-typeset .align-center h6:before, .align-center .as-heading-medium:before, .align-center .as-heading-small:before {
     margin-left: auto;
     margin-right: auto; }
 
 .as-heading-headline, .is-typeset .headline {
   font-size: 5.6rem;
   line-height: 0.4464285714; }
+  .as-heading-headline:before, .is-typeset .headline:before {
+    margin-bottom: 32px; }
 
 .as-heading-headline--leader {
   margin-top: 5.6rem; }
@@ -269,7 +276,7 @@ input[type="file"] {
 
 .as-heading-small {
   font-size: 1.8rem;
-  line-height: 1; }
+  line-height: 1.3888888889; }
 
 .as-heading-small--leader {
   margin-top: 1.8rem; }
@@ -343,19 +350,26 @@ input[type="file"] {
   position: relative;
   z-index: 3;
   margin-top: 3rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 850px) {
     .article--single {
       margin-top: 0;
+      padding: 3rem;
+      padding-top: 2.5rem;
+      -webkit-transform: translateY(-2.5rem);
+          -ms-transform: translateY(-2.5rem);
+              transform: translateY(-2.5rem); } }
+  @media screen and (min-width: 990px) {
+    .article--single {
       padding: 6rem;
-      padding-top: 5rem;
-      -webkit-transform: translateY(-5rem);
-          -ms-transform: translateY(-5rem);
-              transform: translateY(-5rem); } }
+      padding-top: 3.5rem;
+      -webkit-transform: translateY(-3.5rem);
+          -ms-transform: translateY(-3.5rem);
+              transform: translateY(-3.5rem); } }
 
 .aside {
   position: relative; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .aside__m {
     padding-right: 3rem; } }
 
@@ -764,7 +778,7 @@ input[type="file"] {
       margin-top: 0; }
     .row .trailer-disable8 {
       margin-bottom: 0; } }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 850px) {
     .row .colspan16-1 {
       width: 6.25%; }
     .row .colspan16-2 {
