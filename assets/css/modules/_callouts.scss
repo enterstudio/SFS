@@ -1,0 +1,12 @@
+// ------------------------------------------------------------
+// Callouts
+// ------------------------------------------------------------
+
+.callout {
+	position: relative;
+	@include padding-all($internal-spacing/2);
+	.text-link {
+		@include leader($para);
+		display: inline-block;
+	}
+}

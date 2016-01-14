@@ -1,0 +1,17 @@
+// ------------------------------------------------------------
+// Asides
+// ------------------------------------------------------------
+
+.aside {
+	position: relative;
+}
+
+.aside__m {
+	&:first-of-type {
+		@extend .space-top;
+	}
+	@extend .space-bottom;
+	@include respond-to($d-vp) {
+		@include padding-right($internal-spacing/2);
+	}
+}

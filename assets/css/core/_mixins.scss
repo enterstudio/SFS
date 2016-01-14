@@ -223,36 +223,25 @@
 // Called by: @include grid_columns(#) where # is the amount of columns needed
 // Perfect for use in breakpoints to use different columns
 
-@mixin grid_columns($columns){
+@mixin grid_columns($columns) {
 	
 	// Columns
-	@for $i from 1 through $columns{
+	@for $i from 1 through $columns {
 		.colspan#{$columns}-#{$i}{
 			width: ((100% / $columns)*$i);		
 		}
 	}
 	
 	// Pushes
-	//@for $i from 1 through $columns{
-		//.push#{$columns}-#{$i}{
-			//margin-left: ((100% / $columns)*$i);		
-		//}
-	//}
+	@for $i from 1 through $columns{
+		.push#{$columns}-#{$i}{
+			margin-left: ((100% / $columns)*$i);		
+		}
+	}
 	
-	//.push-disable#{$columns}{
-		//margin-left: 0;		
-	//}
-	
-	// Pulls
-	//@for $i from 1 through $columns{
-		//.pull#{$columns}-#{$i}{
-			//margin-right: ((100% / $columns)*$i);		
-		//}
-	//}
-	
-	//.pull-disable#{$columns}{
-		//margin-right: 0;		
-	//}
+	.push-disable#{$columns}{
+		margin-left: 0;		
+	}
 	
 	// Hides
 	.hide-at#{$columns} {
@@ -275,12 +264,12 @@
 	}
 	
 	// Specific spacing disables
-	//.leader-disable#{$columns} {
-	//	margin-top: 0;
-	//}
-	//.trailer-disable#{$columns} {
-	//	margin-bottom: 0;
-	//}
+	.leader-disable#{$columns} {
+		margin-top: 0;
+	}
+	.trailer-disable#{$columns} {
+		margin-bottom: 0;
+	}
 }
 
 @mixin grid {	

@@ -2,51 +2,39 @@
 // Colours
 // ------------------------------------------------------------
 
-// Brand colours
-// https://bitbucket.org/fffunction/wiki/wiki/Design%20styles
-// ------------------------------------------------------------
+$sfs-deadpool						: #ff5555;
+$sfs-baker							: #5c24b5;
 
-
-
-// Social shit
-// ------------------------------------------------------------
-
-$facebook-color 					: #3B5998;
-$twitter-color 						: #4099FF;
-$linkedin-color						: #007bb6;
-$youtube-color						: #e52d27;
-$pinterest-color					: #C92228;
-$instagram-color 					: #517fa4;
-$tumblr-color 						: #32506d;
-$foursquare-color 					: #0072b1;
-$google-color 						: #dd4b39;
-$flickr-color 						: #ff0084;
+// Grey scales
+$sfs-knight							: #120000;
+$sfs-miami							: #41474b;
+$sfs-cotton							: #d3cbcb;
+$sfs-vapour							: #f4efef;
 
 
 // Colors assigned to roles
-// Replace assignments with brand colours
 // ------------------------------------------------------------
 
 // Defaults
 $body-color 						: #fff;  					
-$base-color							: #444;  					
-$heading-color						: #333;  					
+$base-color							: $sfs-miami;  					
+$heading-color						: $sfs-knight;  					
 
 // Actions
-$action								: #09c;						
-$action-respond						: #f0c;						
+$action								: $sfs-deadpool;						
+$action-respond						: $sfs-baker;						
 
 // Borders
-$default-border-color 				: #ddd;						
+$default-border-color 				: darken($sfs-vapour, 5%);						
 
 // Forms
 $form-label-color					: $heading-color;			
 $form-legend-color					: $heading-color;			
-$form-placeholder-color				: #777;						
+$form-placeholder-color				: $sfs-vapour;						
 $form-checkbox-color				: $heading-color;			
 $form-radio-color					: $heading-color;			
 
 // Responses
-$warning 							: #dfce43;					// Careful now
-$error 								: #f25111;					// Down with that sort of thing
-$success 							: #41b38e;					// Good bunch of lads
+$warning 							: #ffff00;					// Careful now
+$error 								: #ffa757;					// Down with that sort of thing
+$success 							: #00ff18;					// Good bunch of lads

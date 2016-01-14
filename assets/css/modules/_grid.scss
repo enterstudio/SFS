@@ -8,6 +8,23 @@
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: $internal-spacing-percent;
+	padding-right: $internal-spacing-percent;
+	@include grid_columns(2);
+	@include respond-to($b-vp) {
+		@include grid_columns(4);
+	}
+	@include respond-to($c-vp) {
+		@include grid_columns(8);
+	}
+	@include respond-to($d-vp) {
+		@include grid_columns(16);
+	}
+	@include respond-to($max-vp) {
+		max-width: $max-grid;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 // Drag row left to allow for equal spaced grid. AKA gutters

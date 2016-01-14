@@ -9,9 +9,8 @@
         'actions' => [
             [
                 '_action' => 'email',
-                '_from'   => 'email',
                 'to'      => 'petercolesdc@gmail.com',
-                'sender'  => 'info@sportfinancialservices.co.uk',
+                'sender'  => 'webenquiry@sportfinancialservices.co.uk',
                 'subject' => 'Message from website contact form'
             ]
         ]

@@ -1,0 +1,19 @@
+// ------------------------------------------------------------
+// Articles
+// ------------------------------------------------------------
+
+.article {
+	position: relative;
+}
+
+.article--single {
+	position: relative;
+	z-index: 3;
+	@include leader($internal-spacing/2);
+	@include respond-to($d-vp) {
+		margin-top: 0;
+		@include padding-all($internal-spacing);
+		@include padding-leader(50);
+		transform: translateY(-5rem);
+	}
+}

@@ -2,39 +2,67 @@
 // Core typography
 // ------------------------------------------------------------
 
+%as-heading-rule-before {
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 8%;
+		min-width: 20px;
+		max-width: 40px;
+		@extend .fill-deadpool;
+		height: $default-border-width;
+		margin-bottom: 12px;
+		.fill-deadpool & {
+			@extend .fill-knight;
+		}
+	}
+	&.align-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .as-heading-headline { 
 	@include font-size($alpha); 
-	@include leading($alpha/1.5); 
+	@include leading($alpha); 
+	@extend %as-heading-rule-before;
 } 
 .as-heading-headline--leader { 
-	@include leader($alpha/1.5); 
+	@include leader($alpha); 
 } 
 .as-heading-headline--trailer { 
-	@include trailer($alpha/1.5); 
+	@include trailer($alpha/2); 
 } 
 
 .as-heading-large { 
 	@include font-size($beta); 
+	@include leading($beta/1.25); 
+	@extend %as-heading-rule-before;
 } 
 .as-heading-large--leader { 
 	@include leader($beta);
 } 
 .as-heading-large--trailer { 
-	@include trailer($beta); 
+	@include trailer($beta/1.75); 
 } 
 	
 .as-heading-medium { 
-	@include font-size($gamma);  
+	@include font-size($gamma);
+	@include leading($gamma/1.25);  
+	@extend %as-heading-rule-before;
 } 	
 .as-heading-medium--leader 	{ 
 	@include leader($gamma);
 }	
 .as-heading-medium--trailer	{ 
-	@include trailer($gamma); 
+	@include trailer($gamma/1.75); 
 } 
 
 .as-heading-small { 
 	@include font-size($delta); 
+	line-height: 1; 
+	@extend %as-heading-rule-before;
 } 	
 .as-heading-small--leader 	{ 
 	@include leader($delta);
@@ -72,22 +100,10 @@
 		@extend .as-heading-headline--trailer; 
 	} 
 	
-	h1, h2, h3 	{ 
-		@extend .as-heading-large; 
-		@extend .as-heading-large--leader; 
-		@extend .as-heading-large--trailer; 
-	} 	
-	
-	h4, h5	{ 
-		@extend .as-heading-medium;
-		 @extend .as-heading-medium--leader; 
-		 @extend .as-heading-medium--trailer; 
-	}
-	
-	h6	{ 
-		@extend .as-heading-small; 
-		@extend .as-heading-small--leader; 
-		@extend .as-heading-small--trailer; 
+	h1, h2, h3, h4, h5, h6	{ 
+		 @extend .as-heading-large;
+		 @extend .as-heading-large--leader; 
+		 @extend .as-heading-large--trailer; 
 	}
 	
 	li 			{ @extend .as-para; } 	 	 	

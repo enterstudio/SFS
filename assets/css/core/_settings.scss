@@ -8,9 +8,9 @@
 // :: Spacing units
 // ------------------------------------------------------------
 
-$internal-spacing-percent 			: 2%;		// Used by grid system. Can be used elsewhere
-$internal-spacing					: 20; 		// Space internally with fixed measure. Renders in REM
-$internal-spacing-pixel				: 20px; 	// Space internally with fixed measure. Renders in pixels 
+$internal-spacing-percent 			: 6%;		// Used by grid system. Can be used elsewhere
+$internal-spacing					: 60; 		// Space internally with fixed measure. Renders in REM
+$internal-spacing-pixel				: 60px; 	// Space internally with fixed measure. Renders in pixels 
 
 // ------------------------------------------------------------
 // :: Breakpoints
@@ -19,10 +19,10 @@ $internal-spacing-pixel				: 20px; 	// Space internally with fixed measure. Rend
 // Screens
 // --------------------------
 $a-vp								: 300px;									
-$b-vp 								: 500px;
-$c-vp 								: 780px;
-$d-vp 								: 1000px;
-$e-vp 								: 1400px;
+$b-vp 								: 400px;
+$c-vp 								: 600px;
+$d-vp 								: 800px;
+$e-vp 								: 990px;
 
 // Set assignments
 // --------------------------
@@ -31,37 +31,38 @@ $max-grid							: $e-vp;								// Max grid
 $max-vp								: $e-vp + $internal-spacing-pixel*2;	// Max viewport
 $table-respond						: $c-vp;								// Responsive tables
 $menu-respond						: $c-vp;								// If using ss/non ss navigation
-$ie-fixed-vp						: $d-vp;    							// Viewport for Old, Old Wooden Ships
+$ie-fixed-vp						: $max-grid;
 
 // ------------------------------------------------------------
 // :: Borders
 // ------------------------------------------------------------
 
-$default-border-width 				: 1px; 		// Border width
+$default-border-width 				: 2px; 		// Border width
 $border-radius						: 10px;		// Default radius
 
 // ------------------------------------------------------------
 // :: Type (Renders in REM using @include font-size($#);
 // ------------------------------------------------------------
 
-$alpha   	: 30;
-$beta		: 19;
-$gamma		: 16;
-$delta		: 15;
-$epsilon	: 14;
-$zeta		: 13;
-$eta		: 11;
+$alpha   	: 56;
+$beta		: 32;
+$gamma		: 22;
+$delta		: 18;
+$epsilon	: 16;
+$zeta		: 14;
+$eta		: 12;
 
 // Set units
 // --------------------------------
 
-$base-font-size		: $delta; 		// Page default size
-$para				: $delta;  	 	// Paragraph size
-$quote				: $beta;		// Quote size
-$form-label-size    : $epsilon;		// Form label size
-$form-legend-size	: $gamma;		// Form legend size 
+$base-font-size		: $epsilon; 		// Page default size
+$para				: $epsilon;  	 	// Paragraph size
+$quote				: $beta;			// Quote size
+$form-label-size    : $delta;			// Form label size
+$form-legend-size	: $delta;			// Form legend size 
+
 
 // Calc units
 // --------------------------------
 $rembase 			: 10;			// What do we want our rems to calculate from. 10 is nice and easy
-$base-rhythm		: 20;			// Vertical rhythm	
+$base-rhythm		: 25;			// Vertical rhythm	

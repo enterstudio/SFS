@@ -5,13 +5,21 @@
 // ------------------------------------------------------------
 
 @each $number, $color in 
-		('facebook', $facebook-color),
-		('twitter', $twitter-color),
+		('deadpool', $sfs-deadpool),
+		('baker', $sfs-baker),
+		('knight', $sfs-knight),
+		('miami', $sfs-miami),
+		('cotton', $sfs-cotton),
+		('vapour', $sfs-vapour),
+		('white', #fff),
 	{
 	.color-#{$number} {
 		color: $color;
 	}
 	.fill-#{$number} {
 		background-color: $color;
+	}
+	.rule-#{$number} {
+		border-color: $color;
 	}
 }

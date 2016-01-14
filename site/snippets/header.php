@@ -7,15 +7,19 @@
 	<title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 	<meta name="description" content="<?php echo $site->description()->html() ?>">
 	<meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
-	<?php echo css('static/assets/css/screen.css') ?>
+	<script src="https://use.typekit.net/wjy2nzb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<?php echo css('static/assets/css/screen.min.css') ?>
 	<?php echo js('static/assets/js/libs/modernizr.js') ?>
 </head>
 <body>
 <div class="ui-canvas">
 	<a href="#pagecontent" class="skiplink" data-js="skiplink">Skip to main content</a>	
 	<header class="header" role="banner">
+		<!--
 		<a href="<?php echo url() ?>"><?php echo $site->title()->html() ?></a>
 		<?php snippet('menu') ?>
+		-->
 	</header>
 	<!-- ID and -nofocus required for proper skiplink operation -->
 	<main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">

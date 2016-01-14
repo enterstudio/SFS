@@ -4,11 +4,11 @@
 // ------------------------------------------------------------
 
 // Padding
-.padd-section-top 		{ @include padding-leader($internal-spacing); }
-.padd-section-bottom 	{ @include padding-trailer($internal-spacing); }
-.padd-section-both 		{ @extend .padd-section-top; @extend .padd-section-bottom; }
+.padd-top 		{ @include padding-leader($internal-spacing/2); }
+.padd-bottom 	{ @include padding-trailer($internal-spacing/2); }
+.padd-both 		{ @extend .padd-top; @extend .padd-bottom; }
 
 // Spacing
-.space-section-top 		{ @include leader($internal-spacing); }
-.space-section-bottom 	{ @include trailer($internal-spacing); }
-.space-section-both 	{ @extend .space-section-top; @extend .space-section-bottom; }
+.space-top 		{ @include leader($internal-spacing/2); }
+.space-bottom 	{ @include trailer($internal-spacing/2); }
+.space-both 	{ @extend .space-top; @extend .space-bottom; }
