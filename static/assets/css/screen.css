@@ -69,7 +69,7 @@ textarea {
 body, select, input, textarea, button {
   font-family: 'source-sans-pro', sans-serif; }
 
-h1, h2, h3, h4, h5, h6, .as-blockquote p, .is-typeset blockquote p {
+h1, h2, h3, h4, h5, h6, .button, .as-blockquote p, .is-typeset blockquote p {
   font-family: 'abolition-soft', sans-serif;
   font-style: italic; }
 
@@ -243,16 +243,26 @@ input[type="file"] {
     margin-right: auto; }
 
 .as-heading-headline, .is-typeset .headline {
-  font-size: 5.6rem;
-  line-height: 0.4464285714; }
-  .as-heading-headline:before, .is-typeset .headline:before {
-    margin-bottom: 32px; }
+  font-size: 3.7rem;
+  line-height: 0.9765625; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline, .is-typeset .headline {
+      font-size: 5.6rem;
+      line-height: 0.4464285714; }
+      .as-heading-headline:before, .is-typeset .headline:before {
+        margin-bottom: 32px; } }
 
 .as-heading-headline--leader {
-  margin-top: 5.6rem; }
+  margin-top: 3.2rem; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline--leader {
+      margin-top: 5.6rem; } }
 
 .as-heading-headline--trailer, .is-typeset .headline {
-  margin-bottom: 2.8rem; }
+  margin-bottom: 1.8285714286rem; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline--trailer, .is-typeset .headline {
+      margin-bottom: 2.8rem; } }
 
 .as-heading-large, .is-typeset h1, .is-typeset h2, .is-typeset h3, .is-typeset h4, .is-typeset h5, .is-typeset h6 {
   font-size: 3.2rem;
@@ -355,16 +365,12 @@ input[type="file"] {
       margin-top: 0;
       padding: 3rem;
       padding-top: 2.5rem;
-      -webkit-transform: translateY(-2.5rem);
-          -ms-transform: translateY(-2.5rem);
-              transform: translateY(-2.5rem); } }
+      margin-top: -2.5rem; } }
   @media screen and (min-width: 990px) {
     .article--single {
       padding: 6rem;
       padding-top: 3.5rem;
-      -webkit-transform: translateY(-3.5rem);
-          -ms-transform: translateY(-3.5rem);
-              transform: translateY(-3.5rem); } }
+      margin-top: -3.5rem; } }
 
 .aside {
   position: relative; }
@@ -377,56 +383,60 @@ input[type="file"] {
   background: transparent;
   border: none;
   display: inline-block;
-  text-align: center;
   padding: 1.2rem;
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
-  font-size: 1.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
-  border-radius: 10px;
   color: #fff;
   background-color: #ff5555;
   text-decoration: none;
   position: relative;
   vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
+  html.svg .button {
+    padding-right: 5rem;
+    background-image: url(../svg/source/icon-arrow-right-white.svg);
+    background-position: 92.5% 50%;
+    background-repeat: no-repeat;
+    background-size: 18px 12.5px; }
   .button:hover, .button:focus, .button:active {
     color: #fff;
-    background-color: #5c24b5; }
-
-.button-a11y, .button--a11y {
-  position: relative;
-  overflow: hidden; }
-  .button-a11y span, .button--a11y span {
-    top: -10em;
-    position: absolute;
-    display: inline-block; }
-  .button-a11y:after, .button--a11y:after {
-    content: attr(title);
-    display: inline-block;
-    color: inherit; }
+    background-color: #120000; }
 
 .button--block {
   display: block;
   width: 100%; }
 
 .button--secondary {
-  background-color: #5c24b5; }
+  background-color: #41474b; }
   .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
-    background-color: #ff5555; }
-
-.button--disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); }
+    background-color: #ff3b3b; }
 
 .callout {
   position: relative;
+  overflow: hidden;
   padding: 3rem; }
   .callout .text-link {
     margin-top: 1.6rem;
     display: inline-block; }
+
+.callout--pair .callout__cta {
+  margin-top: 2rem; }
+
+@media screen and (min-width: 600px) {
+  .callout--pair .as-heading-large, .callout--pair .is-typeset h1, .is-typeset .callout--pair h1, .callout--pair .is-typeset h2, .is-typeset .callout--pair h2, .callout--pair .is-typeset h3, .is-typeset .callout--pair h3, .callout--pair .is-typeset h4, .is-typeset .callout--pair h4, .callout--pair .is-typeset h5, .is-typeset .callout--pair h5, .callout--pair .is-typeset h6, .is-typeset .callout--pair h6 {
+    width: 40%;
+    float: left;
+    display: inline-block; }
+  .callout--pair .callout__cta {
+    width: 55%;
+    margin-left: 5%;
+    float: left;
+    display: inline-block; }
+    .callout--pair .callout__cta .button {
+      float: right; } }
 
 .form {
   position: relative; }
@@ -871,6 +881,18 @@ input[type="file"] {
   min-width: 106%;
   left: -6%; }
 
+.hero {
+  position: relative;
+  z-index: 0; }
+
+.hero--default {
+  padding-top: 8%;
+  padding-bottom: 2%; }
+  @media screen and (min-width: 850px) {
+    .hero--default {
+      padding-top: 15%;
+      padding-bottom: 5%; } }
+
 .icon, .as-svg {
   display: inline-block;
   vertical-align: middle;
@@ -914,7 +936,8 @@ input[type="file"] {
     display: block;
     position: relative;
     padding-top: 0.8rem;
-    padding-bottom: 0.8rem; }
+    padding-bottom: 0.8rem;
+    color: #41474b; }
     .navigation-secondary__item a:before {
       width: 0;
       height: 0;
@@ -927,8 +950,10 @@ input[type="file"] {
     .navigation-secondary__item a:hover:before, .navigation-secondary__item a:focus:before, .navigation-secondary__item a:active:before {
       border-left-color: #ff5555; }
 
-.navigation-secondary__item--current a:before {
-  border-left-color: #ff5555; }
+.navigation-secondary__item--current a {
+  color: #ff5555; }
+  .navigation-secondary__item--current a:before {
+    border-left-color: #ff5555; }
 
 .rule, .navigation-secondary__item a {
   border-color: #eae0e0;
@@ -952,10 +977,6 @@ input[type="file"] {
 .section {
   position: relative;
   z-index: 2; }
-
-.svg-example {
-  width: 200px;
-  height: 200px; }
 
 .max-meter {
   max-width: 800px; }
@@ -1035,6 +1056,35 @@ a.text-link {
     .fill-deadpool a.text-link:hover, .as-heading-headline:before a.text-link:hover, .is-typeset .headline:before a.text-link:hover, .as-heading-large:before a.text-link:hover, .is-typeset h1:before a.text-link:hover, .is-typeset h2:before a.text-link:hover, .is-typeset h3:before a.text-link:hover, .is-typeset h4:before a.text-link:hover, .is-typeset h5:before a.text-link:hover, .is-typeset h6:before a.text-link:hover, .as-heading-medium:before a.text-link:hover, .as-heading-small:before a.text-link:hover, .fill-deadpool a.text-link:focus, .as-heading-headline:before a.text-link:focus, .is-typeset .headline:before a.text-link:focus, .as-heading-large:before a.text-link:focus, .is-typeset h1:before a.text-link:focus, .is-typeset h2:before a.text-link:focus, .is-typeset h3:before a.text-link:focus, .is-typeset h4:before a.text-link:focus, .is-typeset h5:before a.text-link:focus, .is-typeset h6:before a.text-link:focus, .as-heading-medium:before a.text-link:focus, .as-heading-small:before a.text-link:focus, .fill-deadpool a.text-link:active, .as-heading-headline:before a.text-link:active, .is-typeset .headline:before a.text-link:active, .as-heading-large:before a.text-link:active, .is-typeset h1:before a.text-link:active, .is-typeset h2:before a.text-link:active, .is-typeset h3:before a.text-link:active, .is-typeset h4:before a.text-link:active, .is-typeset h5:before a.text-link:active, .is-typeset h6:before a.text-link:active, .as-heading-medium:before a.text-link:active, .as-heading-small:before a.text-link:active {
       border-bottom-color: #fff; }
 
+a.text-link--post-icon {
+  position: relative; }
+  a.text-link--post-icon:after {
+    width: 7.5px;
+    height: 12px;
+    margin-left: 1.2rem;
+    content: "";
+    display: none;
+    background-size: 12px 7.5px;
+    vertical-align: middle; }
+    html.svg a.text-link--post-icon:after {
+      display: inline-block; }
+  .fill-knight a.text-link--post-icon:after,
+  .fill-deadpool .as-heading-headline:before a.text-link--post-icon:after,
+  .as-heading-headline:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-headline:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-headline:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-headline:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-headline:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-headline:before a.text-link--post-icon:after, .fill-deadpool .is-typeset .headline:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool .headline:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset .headline:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before .headline:before a.text-link--post-icon:after, .is-typeset .headline:before .headline:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset .headline:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before .headline:before a.text-link--post-icon:after, .is-typeset h1:before .headline:before a.text-link--post-icon:after, .is-typeset h2:before .headline:before a.text-link--post-icon:after, .is-typeset h3:before .headline:before a.text-link--post-icon:after, .is-typeset h4:before .headline:before a.text-link--post-icon:after, .is-typeset h5:before .headline:before a.text-link--post-icon:after, .is-typeset h6:before .headline:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset .headline:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before .headline:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset .headline:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before .headline:before a.text-link--post-icon:after, .fill-deadpool .as-heading-large:before a.text-link--post-icon:after,
+  .as-heading-headline:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-large:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-large:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-large:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-large:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-large:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h1:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h1:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h1:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h1:before a.text-link--post-icon:after, .is-typeset .headline:before h1:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h1:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h1:before a.text-link--post-icon:after, .is-typeset h1:before h1:before a.text-link--post-icon:after, .is-typeset h2:before h1:before a.text-link--post-icon:after, .is-typeset h3:before h1:before a.text-link--post-icon:after, .is-typeset h4:before h1:before a.text-link--post-icon:after, .is-typeset h5:before h1:before a.text-link--post-icon:after, .is-typeset h6:before h1:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h1:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h1:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h1:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h1:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h2:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h2:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h2:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h2:before a.text-link--post-icon:after, .is-typeset .headline:before h2:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h2:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h2:before a.text-link--post-icon:after, .is-typeset h1:before h2:before a.text-link--post-icon:after, .is-typeset h2:before h2:before a.text-link--post-icon:after, .is-typeset h3:before h2:before a.text-link--post-icon:after, .is-typeset h4:before h2:before a.text-link--post-icon:after, .is-typeset h5:before h2:before a.text-link--post-icon:after, .is-typeset h6:before h2:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h2:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h2:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h2:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h2:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h3:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h3:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h3:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h3:before a.text-link--post-icon:after, .is-typeset .headline:before h3:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h3:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h3:before a.text-link--post-icon:after, .is-typeset h1:before h3:before a.text-link--post-icon:after, .is-typeset h2:before h3:before a.text-link--post-icon:after, .is-typeset h3:before h3:before a.text-link--post-icon:after, .is-typeset h4:before h3:before a.text-link--post-icon:after, .is-typeset h5:before h3:before a.text-link--post-icon:after, .is-typeset h6:before h3:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h3:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h3:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h3:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h3:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h4:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h4:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h4:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h4:before a.text-link--post-icon:after, .is-typeset .headline:before h4:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h4:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h4:before a.text-link--post-icon:after, .is-typeset h1:before h4:before a.text-link--post-icon:after, .is-typeset h2:before h4:before a.text-link--post-icon:after, .is-typeset h3:before h4:before a.text-link--post-icon:after, .is-typeset h4:before h4:before a.text-link--post-icon:after, .is-typeset h5:before h4:before a.text-link--post-icon:after, .is-typeset h6:before h4:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h4:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h4:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h4:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h4:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h5:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h5:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h5:before a.text-link--post-icon:after, .is-typeset .headline:before h5:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h5:before a.text-link--post-icon:after, .is-typeset h1:before h5:before a.text-link--post-icon:after, .is-typeset h2:before h5:before a.text-link--post-icon:after, .is-typeset h3:before h5:before a.text-link--post-icon:after, .is-typeset h4:before h5:before a.text-link--post-icon:after, .is-typeset h5:before h5:before a.text-link--post-icon:after, .is-typeset h6:before h5:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h5:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h5:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h6:before a.text-link--post-icon:after,
+  .is-typeset .fill-deadpool h6:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h6:before a.text-link--post-icon:after, .is-typeset .headline:before h6:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h6:before a.text-link--post-icon:after, .is-typeset h1:before h6:before a.text-link--post-icon:after, .is-typeset h2:before h6:before a.text-link--post-icon:after, .is-typeset h3:before h6:before a.text-link--post-icon:after, .is-typeset h4:before h6:before a.text-link--post-icon:after, .is-typeset h5:before h6:before a.text-link--post-icon:after, .is-typeset h6:before h6:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h6:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h6:before a.text-link--post-icon:after, .fill-deadpool .as-heading-medium:before a.text-link--post-icon:after,
+  .as-heading-headline:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-medium:before a.text-link--post-icon:after, .fill-deadpool .as-heading-small:before a.text-link--post-icon:after,
+  .as-heading-headline:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-small:before a.text-link--post-icon:after, .fill-miami a.text-link--post-icon:after {
+    background: url(../svg/source/icon-arrow-right-deadpool.svg) transparent no-repeat right top; }
+  .fill-deadpool a.text-link--post-icon:after, .as-heading-headline:before a.text-link--post-icon:after, .is-typeset .headline:before a.text-link--post-icon:after, .as-heading-large:before a.text-link--post-icon:after, .is-typeset h1:before a.text-link--post-icon:after, .is-typeset h2:before a.text-link--post-icon:after, .is-typeset h3:before a.text-link--post-icon:after, .is-typeset h4:before a.text-link--post-icon:after, .is-typeset h5:before a.text-link--post-icon:after, .is-typeset h6:before a.text-link--post-icon:after, .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before a.text-link--post-icon:after {
+    background: url(../svg/source/icon-arrow-right-white.svg) transparent no-repeat right top; }
+
 @media screen and (min-width: 990px) {
   .is-typeset--longform p, .is-typeset--longform li {
     font-size: 1.8rem; }
@@ -1078,7 +1128,7 @@ a.text-link {
 .background-anchor-center-right {
   background-position: center right; }
 
-.color-deadpool, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active, .navigation-secondary__item--current a {
+.color-deadpool, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active {
   color: #ff5555; }
 
 .fill-deadpool, .as-heading-headline:before, .is-typeset .headline:before, .as-heading-large:before, .is-typeset h1:before, .is-typeset h2:before, .is-typeset h3:before, .is-typeset h4:before, .is-typeset h5:before, .is-typeset h6:before, .as-heading-medium:before, .as-heading-small:before {
@@ -1105,7 +1155,7 @@ a.text-link {
 .rule-knight {
   border-color: #120000; }
 
-.color-miami, .navigation-secondary__item a {
+.color-miami {
   color: #41474b; }
 
 .fill-miami {

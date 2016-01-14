@@ -4,7 +4,7 @@ title: Site
 pages: default
 files: false
 fields:
-  site_title:
+  title:
     label: Website main title
     type:  text
   contact_phone:

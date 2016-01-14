@@ -4,9 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+	<title><?php echo $site->title()->html() ?>. <?php echo $page->title()->html() ?></title>
+<?php if($page->description() != "") { ?>
+	<meta name="description" content="<?php echo $page->description()->html() ?>">
+<?php } else { ?>
 	<meta name="description" content="<?php echo $site->description()->html() ?>">
+<?php } ?>
+<?php if($page->keywords() != "") { ?>
+	<meta name="keywords" content="<?php echo $page->keywords()->html() ?>">
+<?php } else { ?>
 	<meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
+<?php } ?>
 	<script src="https://use.typekit.net/wjy2nzb.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<?php echo css('static/assets/css/screen.min.css') ?>

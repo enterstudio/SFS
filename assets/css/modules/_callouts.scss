@@ -4,9 +4,32 @@
 
 .callout {
 	position: relative;
+	overflow: hidden;
 	@include padding-all($internal-spacing/2);
 	.text-link {
 		@include leader($para);
 		display: inline-block;
+	}
+}
+
+.callout--pair {
+	.callout__cta {
+		@include leader(20);
+	}
+	@include respond-to($c-vp) {
+		.as-heading-large {
+			width: 40%;
+			float: left;
+			display: inline-block;
+		}
+		.callout__cta {
+			width: 55%;
+			margin-left: 5%;
+			float: left;
+			display: inline-block;
+			.button {
+				float: right;
+			}
+		}
 	}
 }

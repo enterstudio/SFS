@@ -278,16 +278,26 @@ input[type="file"] {
     margin-right: auto; }
 
 .as-heading-headline, .is-typeset .headline {
-  font-size: 5.6rem;
-  line-height: 0.4464285714; }
-  .as-heading-headline:before, .is-typeset .headline:before {
-    margin-bottom: 32px; }
+  font-size: 3.7rem;
+  line-height: 0.9765625; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline, .is-typeset .headline {
+      font-size: 5.6rem;
+      line-height: 0.4464285714; }
+      .as-heading-headline:before, .is-typeset .headline:before {
+        margin-bottom: 32px; } }
 
 .as-heading-headline--leader {
-  margin-top: 5.6rem; }
+  margin-top: 3.2rem; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline--leader {
+      margin-top: 5.6rem; } }
 
 .as-heading-headline--trailer, .is-typeset .headline {
-  margin-bottom: 2.8rem; }
+  margin-bottom: 1.8285714286rem; }
+  @media screen and (min-width: 600px) {
+    .as-heading-headline--trailer, .is-typeset .headline {
+      margin-bottom: 2.8rem; } }
 
 .as-heading-large, .is-typeset h1, .is-typeset h2, .is-typeset h3, .is-typeset h4, .is-typeset h5, .is-typeset h6 {
   font-size: 3.2rem;

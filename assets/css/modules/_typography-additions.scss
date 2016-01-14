@@ -31,7 +31,30 @@ a.text-link {
 }
 
 a.text-link--post-icon {
-	
+	position: relative;
+	&:after {
+		width: 7.5px;
+		height: 12px;
+		@include space-left(12);
+		content: "";
+		display: none;
+		background-size: 12px 7.5px;
+		vertical-align: middle;
+		html.svg & {
+			display: inline-block;	
+		}
+	}
+	.fill-knight &,
+	.fill-miami & {
+		&:after {
+			background: url(../svg/source/icon-arrow-right-deadpool.svg) transparent no-repeat right top;
+		}
+	}
+	.fill-deadpool & {
+		&:after {
+			background: url(../svg/source/icon-arrow-right-white.svg) transparent no-repeat right top;
+		}
+	}
 }
 
 .is-typeset--longform {

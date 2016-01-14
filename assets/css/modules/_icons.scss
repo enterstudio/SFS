@@ -32,20 +32,23 @@ $icon-sizes: 16, 24;
 			height: ($icon-size) + px;
     	}
     }
-    
-    // Uncomment for padded variation
-    
-    //.icon--padded-#{$icon-size} {
-    	//background-size: ($icon-size/2) + px ($icon-size/2) + px;
-    	//svg {
-		  //  width: ($icon-size/2) + px;
-		  // height: ($icon-size/2) + px;
-		  // margin-left: ($icon-size/4) + px;
-		  // margin-top: ($icon-size/4) + px;
-    	//}
-    //}
 }
 
 // ------------------------------------------------------------
 // Per icon control as needed
 // ------------------------------------------------------------
+
+// Please keep in alphabetical order
+//$icons:
+
+
+// Get svgs
+// ---------------------------------------
+
+//@each $icon in $icons {
+//	.#{$icon} {
+//		html.svg & {
+//			background-image: url("../svg/source/#{$icon}.svg");
+//		}
+//	}
+//}

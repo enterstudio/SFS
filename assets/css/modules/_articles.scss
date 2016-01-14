@@ -14,11 +14,13 @@
 		margin-top: 0;
 		@include padding-all($internal-spacing/2);
 		@include padding-leader(25);
-		transform: translateY(-2.5rem);
+		//transform: translateY(-2.5rem);
+		margin-top: -2.5rem;
 	}
 	@include respond-to($max-grid) {
 		@include padding-all($internal-spacing);
 		@include padding-leader(35);
-		transform: translateY(-3.5rem);
+		//transform: translateY(-3.5rem);
+		margin-top: -3.5rem;
 	}
 }

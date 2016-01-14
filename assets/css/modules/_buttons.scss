@@ -7,47 +7,30 @@
 	border: none; // Reset button and reset elements
 	// ------- //
 	display: inline-block;
-	text-align: center;
 	@include padding-all(12);
-	@include padding-left(22);
-	@include padding-right(22);
-	@include font-size($para);
+	@include padding-left(20);
+	@include padding-right(20);
+	@include font-size($delta);
+	@extend %font-heading;
 	line-height: 1;
-	border-radius: $border-radius;
 	color: #fff;
-	background-color: $action;
+	background-color: $sfs-deadpool;
 	text-decoration: none;
 	position: relative;
 	vertical-align: middle;
 	cursor: pointer;
+	border-bottom: 2px solid rgba(0,0,0,0.5);
+	html.svg & {
+		@include padding-right(50);
+		background-image: url(../svg/source/icon-arrow-right-white.svg);
+		background-position: 92.5% 50%;
+		background-repeat: no-repeat;
+		background-size: 18px 12.5px;
+	}
 	@include link-active-styles {
 		color: #fff;
-		background-color: $action-respond;
+		background-color: $sfs-knight;
 	}
-}
-
-// ------------------------------------------------------------
-// Accessible labels
-// ------------------------------------------------------------
-
-.button-a11y {
-	position: relative;
-	overflow: hidden;
-	span {
-		top: -10em;
-		position: absolute;
-		display: inline-block;
-	}
-	&:after {
-		 content: attr(title);
-		 display: inline-block;
-		 color: inherit;
-	}
-}
-
-// We want this available as a BEM to extend .button, as well as being stand alone
-.button--a11y {
-	@extend .button-a11y;
 }
 
 // ------------------------------------------------------------
@@ -60,14 +43,8 @@
 }
 
 .button--secondary {
-	background-color: $action-respond;
+	background-color: $sfs-miami;
 	@include link-active-styles {
-		background-color: $action;
+		background-color: darken($sfs-deadpool, 5%);
 	}
-}
-
-.button--disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-	filter: grayscale(100%);
 }

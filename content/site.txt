@@ -10,10 +10,6 @@ Copyright: © (date: Year) Sport Finance Services. All rights reserved
 
 ----
 
-Site-title: Sport Finance Services
-
-----
-
 Contact-phone: 0117 1234 567
 
 ----
@@ -23,3 +19,7 @@ Contact-email: hello@sportfinanceservices.com
 ----
 
 Contact-address: 
+
+----
+
+Title: Sport Financial Services

@@ -21,7 +21,7 @@
 		@include padding-trailer(8);
 		@extend .rule;
 		@extend .rule--underline;
-		@extend .color-miami;
+		color: $sfs-miami;
 		&:before {
 			width: 0; 
 			height: 0; 
@@ -48,7 +48,7 @@
 
 .navigation-secondary__item--current {
 	a {
-		@extend .color-deadpool;
+		color: $action;
 		&:before {
 			border-left-color: $sfs-deadpool;
 		}

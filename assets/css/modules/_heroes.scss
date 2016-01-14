@@ -1,0 +1,17 @@
+// ------------------------------------------------------------
+// Heroes
+// ------------------------------------------------------------
+
+.hero {
+	position: relative;
+	z-index: 0;
+}
+
+.hero--default {
+	padding-top: 8%;
+	padding-bottom: 2%;
+	@include respond-to($d-vp) {
+		padding-top: 15%;
+		padding-bottom: 5%;
+	}
+}
