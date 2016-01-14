@@ -356,6 +356,10 @@ input[type="file"] {
 .article {
   position: relative; }
 
+.article__footer {
+  margin-top: 4rem;
+  clear: both; }
+
 .article--single {
   position: relative;
   z-index: 3;
@@ -394,7 +398,7 @@ input[type="file"] {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3); }
   html.svg .button {
     padding-right: 5rem;
     background-image: url(../svg/source/icon-arrow-right-white.svg);

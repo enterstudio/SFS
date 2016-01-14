@@ -6,6 +6,11 @@
 	position: relative;
 }
 
+.article__footer {
+	@include leader(40);
+	clear: both;
+}
+
 .article--single {
 	position: relative;
 	z-index: 3;

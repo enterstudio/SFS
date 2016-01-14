@@ -19,7 +19,7 @@
 	position: relative;
 	vertical-align: middle;
 	cursor: pointer;
-	border-bottom: 2px solid rgba(0,0,0,0.5);
+	border-bottom: 3px solid rgba(0,0,0,0.3);
 	html.svg & {
 		@include padding-right(50);
 		background-image: url(../svg/source/icon-arrow-right-white.svg);
