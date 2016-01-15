@@ -25,7 +25,6 @@ fields:
   service_quote:
     label: Testimonial
     type: text
-    required: true
   service_citation:
     label: Testimonial citation
     type: text

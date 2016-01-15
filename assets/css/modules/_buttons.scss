@@ -45,6 +45,6 @@
 .button--secondary {
 	background-color: $sfs-miami;
 	@include link-active-styles {
-		background-color: darken($sfs-deadpool, 5%);
+		background-color: darken($sfs-deadpool, 10%);
 	}
 }

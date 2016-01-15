@@ -357,7 +357,7 @@ input[type="file"] {
   position: relative; }
 
 .article__footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   clear: both; }
 
 .article--single {
@@ -416,7 +416,7 @@ input[type="file"] {
 .button--secondary {
   background-color: #41474b; }
   .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
-    background-color: #ff3b3b; }
+    background-color: #ff2222; }
 
 .callout {
   position: relative;
@@ -982,10 +982,10 @@ input[type="file"] {
   position: relative;
   z-index: 2; }
 
-.max-meter {
-  max-width: 800px; }
+.max-meter, .as-blockquote, .is-typeset blockquote {
+  max-width: 760px; }
 
-.max-meter--center {
+.max-meter--center, .as-blockquote, .is-typeset blockquote {
   margin-left: auto;
   margin-right: auto; }
 
@@ -1102,13 +1102,30 @@ a.text-link--post-icon {
 
 .as-blockquote, .is-typeset blockquote {
   position: relative; }
+  html.svg .as-blockquote:before, html.svg .is-typeset blockquote:before, .is-typeset html.svg blockquote:before {
+    background-image: url(../svg/source/icon-blockquote-deadpool.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 32px 28px;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem; }
   .as-blockquote p, .is-typeset blockquote p {
-    font-size: 3.2rem;
+    font-size: 2.7rem;
+    line-height: 1.171875;
     text-align: center; }
+    @media screen and (min-width: 600px) {
+      .as-blockquote p, .is-typeset blockquote p {
+        font-size: 3.2rem; } }
   .as-blockquote cite, .is-typeset blockquote cite {
     display: block;
     font-weight: 600;
-    margin-top: 1.6rem; }
+    margin-top: 1.6rem;
+    text-align: center; }
 
 .background-cover {
   background-size: cover;

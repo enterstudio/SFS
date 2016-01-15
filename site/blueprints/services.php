@@ -24,6 +24,13 @@ fields:
       - bold
       - link
       - email
+  service_quote:
+    label: Testimonial
+    type: text
+  service_citation:
+    label: Testimonial citation
+    type: text
+    required: false
   line-seo:
     type: line
   description:

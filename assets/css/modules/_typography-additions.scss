@@ -2,7 +2,7 @@
 // Aligment and meter
 // ------------------------------------------------------------
 
-.max-meter 				{ max-width: 800px; }
+.max-meter 				{ max-width: 760px; }
 .max-meter--center 		{ margin-left: auto; margin-right: auto; }
 
 .align-center 			{ text-align: center; }
@@ -82,15 +82,37 @@ a.text-link--post-icon {
 
 .as-blockquote {
 	position: relative;
+	@extend .max-meter;
+	@extend .max-meter--center;
+	&:before {
+		html.svg & {
+			background-image: url(../svg/source/icon-blockquote-deadpool.svg);
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: 32px 28px;
+			display: block;
+			content: "";
+			width: 32px;
+			height: 28px;
+			margin-left: auto;
+			margin-right: auto;
+			@include trailer($base-rhythm);
+		}
+	}
 	p {
-		@include font-size($quote);
+		@include font-size($quote - 5);
+		@include leading($quote/1.5);
 		@extend %font-heading;
 		text-align: center;
+		@include respond-to($c-vp) {
+			@include font-size($quote);	
+		}
 	}
 	cite {
 		display: block;
 		font-weight: 600;
 		@include leader($para);
+		text-align: center;
 	}
 }
 

@@ -7,7 +7,7 @@
 }
 
 .article__footer {
-	@include leader(40);
+	@include leader($internal-spacing/2);
 	clear: both;
 }
 

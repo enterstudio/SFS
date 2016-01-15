@@ -10,6 +10,9 @@ function globals () {
 
 	// FastClick
     fastClick(document.body);
+    
+    // Widow control
+    widont('.widont, .widont p, .widont li');
 
     // EqualHeight
     equalHeight('#panels-parent', '.panel');

@@ -3,7 +3,7 @@
 <div class="hero hero--default fill-deadpool">
 	<div class="row">
 		<div class="colspan12-7 colspan16-11 push12-5 push16-5">
-			<h1 class="as-heading-headline as-heading-headline--trailer color-white">Our <?php echo $page->title()->html() ?></h1>
+			<h1 class="as-heading-headline as-heading-headline--trailer color-white">Our <?php echo $page->title() ?></h1>
 		</div>
 	</div>
 </div>
@@ -29,7 +29,7 @@
 					<h3 class="as-heading-large as-heading-large--trailer">What we offer</h3>
 					<nav role="navigation" class="navigation-secondary">
 						<ul class="navigation-secondary__items">
-							<li class="navigation-secondary__item navigation-secondary__item--current"><a href="">All <?php echo $page->title()->html() ?></a></li>
+							<li class="navigation-secondary__item navigation-secondary__item--current"><a href="">All <?php echo $page->title() ?></a></li>
 							<li class="navigation-secondary__item"><a href="">Help with funding</a></li>
 							<li class="navigation-secondary__item"><a href="">Criteria compliance</a></li>
 							<li class="navigation-secondary__item"><a href="">Project management</a></li>
@@ -47,5 +47,26 @@
 		</div>
 	</div>
 </div>
+
+<div class="section fill-white">
+	<div class="row padd-both rule rule--overline">
+		<div class="colspan12-5 colspan16-5 as-grid">
+			<h4 class="as-heading-large as-heading-large--trailer">Who we work with</h4>
+		</div>
+	</div>
+</div>
+
+<?php if ($page->service_quote() !== "") { ?>
+	<div class="section fill-white">
+		<div class="row padd-both rule rule--overline">
+			<blockquote class="as-blockquote">
+				<p class="widont"><?php echo $page->service_quote() ?></p>
+			<?php if ($page->service_citation() !== "") { ?>
+				<cite><?php echo $page->service_citation() ?></cite>
+			<?php } ?>
+			</blockquote>
+		</div>
+	</div>
+<?php } ?>
 
 <?php snippet('footer') ?>
