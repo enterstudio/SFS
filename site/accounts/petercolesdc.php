@@ -7,6 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - services
-  - home
+  - services/help-with-funding
   - services/project-management
+  - about/chard-fc
+  - about/old-abbotonains-fc
+  - services

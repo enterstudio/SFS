@@ -22,6 +22,17 @@ fields:
       - bold
       - link
       - email
+  case_study:
+    label: Featured case study
+    type: select
+    default: architecture
+    options: query
+    query: 
+      page: about
+      fetch: children
+      value: '{{uid}}'
+      text: '{{title}}'
+
   service_quote:
     label: Testimonial
     type: text
