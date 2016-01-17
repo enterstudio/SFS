@@ -4,15 +4,7 @@ title: Services
 pages: true
   template: service
   max: 5
-files: true
-  max: 5
-  size: 500000
-  type:
-    - image
-  fields: 
-    alt_text:
-      label: Alternative text
-      type: text
+files: false
 fields:
   title:
     label: Title

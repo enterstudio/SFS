@@ -7,11 +7,11 @@
 picture img 	{ @extend %max-width; }
 
 .media-logo {
-	width: 23%;
-	height: auto;
+	width: 125px;
+	height: 125px;
 	display: block;
 	float: left;
-	margin-left: 2.5%;
+	margin-left: 5%;
 	@include leader($internal-spacing/4);
 	&:first-of-type {
 		margin-left: 0;
