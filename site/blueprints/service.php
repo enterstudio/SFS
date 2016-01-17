@@ -18,6 +18,7 @@ fields:
   text:
     label: Page text
     type:  textarea
+    required: true
     buttons:
       - bold
       - link

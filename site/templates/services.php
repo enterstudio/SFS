@@ -15,11 +15,8 @@
 				<div class="is-typeset is-typeset--longform">
 					<?php echo $page->text()->kirbytext() ?>
 				</div>
-				<footer class="article__footer callout callout--pair fill-deadpool">
-					<h3 class="as-heading-large color-white widont">Find out how we can help</h3>
-					<div class="callout__cta">
-						<a href="/contact/" class="button button--secondary">Contact us</a>
-					</div>
+				<footer class="article__footer">
+					<?php snippet('callout-contact') ?>
 				</footer>
 			</article>
 		</div>
@@ -29,19 +26,12 @@
 					<h3 class="as-heading-large as-heading-large--trailer">What we offer</h3>
 					<nav role="navigation" class="navigation-secondary">
 						<ul class="navigation-secondary__items">
-							<li class="navigation-secondary__item navigation-secondary__item--current"><a href="">All <?php echo $page->title() ?></a></li>
-							<li class="navigation-secondary__item"><a href="">Help with funding</a></li>
-							<li class="navigation-secondary__item"><a href="">Criteria compliance</a></li>
-							<li class="navigation-secondary__item"><a href="">Project management</a></li>
+							<li class="navigation-secondary__item navigation-secondary__item--current">
+								<a href="/services/">All services</a>
+							</li>
+							<?php snippet('subnav') ?>
 						</ul>
 					</nav>
-				</div>
-				<div class="aside__m">
-					<div class="callout fill-miami">
-						<h3 class="as-heading-small color-cotton">Case study</h3>
-						<h3 class="color-white">Old Abbotonains FC</h3>
-						<a href="" class="text-link text-link--post-icon">Read case study</a>
-					</div>
 				</div>
 			</aside>
 		</div>
@@ -53,20 +43,26 @@
 		<div class="colspan12-5 colspan16-5 as-grid">
 			<h4 class="as-heading-large as-heading-large--trailer">Who we work with</h4>
 		</div>
+		<div class="colspan12-7 colspan16-11 as-grid">
+			<?php 
+				$snippet = $pages->find('snippets');
+			?>
+			<?php if($logoa = $snippet->image($snippet->logo_a())) :?>
+				<img class="media-logo" src="<?php echo $logoa->url() ?>" alt="<?php echo $logoa->alt_text() ?>" />
+			<?php endif ?>
+			<?php if($logob = $snippet->image($snippet->logo_b())) :?>
+				<img class="media-logo" src="<?php echo $logob->url() ?>" alt="<?php echo $logob->alt_text() ?>" />
+			<?php endif ?>		
+			<?php if($logoc = $snippet->image($snippet->logo_c())) :?>
+				<img class="media-logo" src="<?php echo $logoc->url() ?>" alt="<?php echo $logoc->alt_text() ?>" />
+			<?php endif ?>		
+			<?php if($logod = $snippet->image($snippet->logo_d())) :?>
+				<img class="media-logo" src="<?php echo $logod->url() ?>" alt="<?php echo $logod->alt_text() ?>" />
+			<?php endif ?>
+		</div>
 	</div>
 </div>
 
-<?php if ($page->service_quote() !== "") { ?>
-	<div class="section fill-white">
-		<div class="row padd-both rule rule--overline">
-			<blockquote class="as-blockquote">
-				<p class="widont"><?php echo $page->service_quote() ?></p>
-			<?php if ($page->service_citation() !== "") { ?>
-				<cite><?php echo $page->service_citation() ?></cite>
-			<?php } ?>
-			</blockquote>
-		</div>
-	</div>
-<?php } ?>
+<?php snippet('service-quote') ?>
 
 <?php snippet('footer') ?>

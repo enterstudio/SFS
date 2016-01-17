@@ -16,11 +16,11 @@ Quis postea legendos has ex, nec ei nibh viderer, ius scripta oporteat no. Quem 
 
 ----
 
-Service-quote: Testimonial
+Service-quote: 
 
 ----
 
-Service-citation: Citation
+Service-citation: 
 
 ----
 

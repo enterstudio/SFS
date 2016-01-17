@@ -20,6 +20,7 @@ fields:
   text:
     label: Text
     type:  textarea
+    required: true
     buttons:
       - bold
       - link

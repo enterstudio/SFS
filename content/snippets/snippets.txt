@@ -1,3 +1,17 @@
 Title: Site snippets
 
 ----
+
+Logo-a: test.png
+
+----
+
+Logo-b: test2.png
+
+----
+
+Logo-c: 
+
+----
+
+Logo-d: 

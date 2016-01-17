@@ -6,6 +6,18 @@
 .max-width 		{ @extend %max-width; }
 picture img 	{ @extend %max-width; }
 
+.media-logo {
+	width: 23%;
+	height: auto;
+	display: block;
+	float: left;
+	margin-left: 2.5%;
+	@include leader($internal-spacing/4);
+	&:first-of-type {
+		margin-left: 0;
+	}
+}
+
 // Basic responsive videos
 // ------------------------------------------------------------
 
