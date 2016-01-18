@@ -69,7 +69,7 @@ textarea {
 body, select, input, textarea, button {
   font-family: 'source-sans-pro', sans-serif; }
 
-h1, h2, h3, h4, h5, h6, .button, .as-blockquote p, .is-typeset blockquote p {
+h1, h2, h3, h4, h5, h6, .button, .form-contact-minor .form-label, .as-blockquote p, .is-typeset blockquote p {
   font-family: 'abolition-soft', sans-serif;
   font-style: italic; }
 
@@ -163,16 +163,16 @@ select, input, textarea, button {
   border-radius: 0; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 textarea {
   overflow: auto;
@@ -313,7 +313,7 @@ input[type="file"] {
 .as-nobullet-list {
   list-style-type: none; }
 
-.as-list--typeset, .as-unordered-list--typeset, .is-typeset ul, .as-ordered-list--typeset, .is-typeset ol {
+.as-list--typeset, .as-unordered-list--typeset, .is-typeset ul, .as-ordered-list--typeset, .is-typeset ol, .footer__list {
   margin-bottom: 1.6rem;
   margin-top: 1.6rem; }
 
@@ -470,8 +470,29 @@ input[type="file"] {
     .footer__details {
       margin-top: 3rem; } }
 
+.footer__list li {
+  margin-bottom: 1rem; }
+
+html.svg .footer__list .icon, html.svg .footer__list .as-svg {
+  position: relative;
+  margin-right: 0.8rem;
+  top: -1px; }
+
+.footer__legal {
+  display: block;
+  margin-top: 3.2rem;
+  padding-top: 2.88rem; }
+  .footer__legal a {
+    color: #41474b;
+    border-bottom: 1px solid #41474b; }
+
 .form {
   position: relative; }
+
+.form-contact-minor {
+  margin-top: 2rem; }
+  .form-contact-minor .button {
+    margin-top: 1.6rem; }
 
 .form-section {
   padding: 6rem;
@@ -488,12 +509,20 @@ input[type="file"] {
     height: 1px !important;
     width: 1px !important;
     overflow: hidden; }
+  .form-contact-minor .form-label {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0; }
 
 .form-field {
   position: relative; }
 
 .form-field--spaced {
-  padding-top: 1rem; }
+  margin-top: 1rem; }
 
 .form-item {
   padding: 1rem;
@@ -503,12 +532,20 @@ input[type="file"] {
      -moz-appearance: none;
           appearance: none;
   background-color: #fff; }
+  .form-contact-minor .form-item {
+    float: left;
+    display: inline-block;
+    width: 75%;
+    min-height: 55px; }
   .form-item::focus-inner {
     border: 0;
     padding: 0; }
   .form-item:focus {
     outline: none;
     border-color: #ff5555; }
+
+.form-contact-minor textarea.form-item {
+  height: 180px; }
 
 .form-field__radio-buttons label,
 .form-field__checkboxes label {
@@ -930,25 +967,27 @@ input[type="file"] {
   vertical-align: middle;
   overflow: hidden;
   position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
   line-height: 0; }
   .icon em, .as-svg em {
     position: absolute;
     top: -9999em;
     display: block; }
 
-.icon--16 {
-  width: 16px;
-  height: 16px; }
-  .icon--16 svg {
-    width: 16px;
-    height: 16px; }
+.icon--14 {
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px; }
+  .icon--14 svg {
+    width: 14px;
+    height: 14px; }
 
-.icon--24 {
-  width: 24px;
-  height: 24px; }
-  .icon--24 svg {
-    width: 24px;
-    height: 24px; }
+html.svg .icon-tel-deadpool {
+  background-image: url("../svg/source/icon-tel-deadpool.svg"); }
+
+html.svg .icon-mail-deadpool {
+  background-image: url("../svg/source/icon-mail-deadpool.svg"); }
 
 .media-logo {
   width: 125px;
@@ -997,11 +1036,11 @@ input[type="file"] {
   .navigation-secondary__item--current a:before {
     border-left-color: #ff5555; }
 
-.rule, .navigation-secondary__item a {
+.rule, .footer__legal, .navigation-secondary__item a {
   border-color: #eae0e0;
   border-style: solid; }
 
-.rule--overline, .navigation-secondary__item:first-child a, .rule--all {
+.rule--overline, .footer__legal, .navigation-secondary__item:first-child a, .rule--all {
   border-top-width: 2px; }
 
 .rule--underline, .navigation-secondary__item a, .rule--all {
@@ -1226,7 +1265,7 @@ a.text-link--post-icon {
 .color-cotton {
   color: #d3cbcb; }
 
-.fill-cotton {
+.fill-cotton, .form-contact-minor .form-field {
   background-color: #d3cbcb; }
 
 .rule-cotton {

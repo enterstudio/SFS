@@ -6,6 +6,13 @@
 	position: relative;
 }
 
+.form-contact-minor {
+	@include leader(20);
+	.button {
+		@include leader(16);
+	}
+}
+
 // Sections / fieldsets
 .form-section {
 	@include padding-all($internal-spacing);
@@ -25,27 +32,45 @@
 	    width: 1px !important;
 	    overflow: hidden;
 	}
+	.form-contact-minor & {
+		float: left;
+		display: inline-block;
+		width: 25%;
+		@extend %font-heading;
+		@include font-size($delta);
+		@include padding-all(10);
+		@include padding-leader(5);
+		padding-bottom: 0;
+	}
 }
 
 // Form field wrapper
 .form-field {
 	position: relative;
 	@extend %pie-clearfix;
+	.form-contact-minor & {
+		@extend .fill-cotton;
+	}
 }
 
 // Space the form field
 .form-field--spaced {
-	@include padding-leader($internal-spacing/6);
+	@include leader($internal-spacing/6);
 }
 
 // Standard form elements  
 .form-item {
 	@include padding-all($internal-spacing/6);
 	display: block;
-	//border: $default-border-width solid $default-border-color;
 	border: none;
 	appearance: none;
 	background-color: #fff;
+	.form-contact-minor & {
+		float: left;
+		display: inline-block;
+		width: 75%;
+		min-height: 55px;
+	}
 	&::focus-inner {
 	    border: 0;
 	    padding: 0;
@@ -53,6 +78,12 @@
 	&:focus {
 		outline: none;
 		border-color: $action;
+	}
+}
+
+textarea.form-item {
+	.form-contact-minor & {
+		height: 180px;
 	}
 }
 

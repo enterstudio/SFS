@@ -4,23 +4,22 @@
 		<div class="row">
 			<div class="colspan12-6 colspan16-7 as-grid">
 				<div class="footer__contact fill-miami">
-					<h6 class="as-heading-large color-white">Ask us a question</h6>
-					<p class="color-cotton">Sporting Partnerships Financial Services Advisers all share and adhere to our company standards, training and compliance requirements and our client promise.</p>
+					<h6 class="as-heading-large as-heading-large--trailer color-white">Ask us a question</h6>
 					<?php snippet('contact-form') ?>
 				</div>
 			</div>
 			<div class="colspan12-5 push12-1 colspan16-8 push16-1 as-grid">
 				<div class="footer__details">
-					<h6 class="as-heading-large">Contact us</h6>
-					<ul class="footer__list footer__list--contact-details">
+					<h6 class="as-heading-large as-heading-large--trailer">Contact us</h6>
+					<ul class="footer__list">
 					<?php 
 						if($site->contact_phone() != ""):
-							echo "<li class='tel'><i class='icon' aria-hidden='true'></i>";
+							echo "<li class='tel'><i class='icon icon--14 icon-tel-deadpool' aria-hidden='true'></i>";
 							echo html($site->contact_phone()); 
 							echo "</li>";
 						endif;
 						if($site->contact_email() != ""):
-							echo "<li><i class='icon' aria-hidden='true'></i><a href='mailto:";
+							echo "<li><i class='icon icon--14 icon-mail-deadpool' aria-hidden='true'></i><a href='mailto:";
 							echo html($site->contact_email()); 
 							echo "'>";
 							echo html($site->contact_email()); 
@@ -28,7 +27,7 @@
 						endif; 
 					?>
 					</ul>
-					<p class="footer__legal"><?php echo $site->copyright()->kirbytext(); ?><?php echo html($site->address()); ?></p>
+					<p class="footer__legal"><a href="terms/">Terms &amp; Conditions</a>, <a href="privacy/">Privacy</a>, <a href="/cookies">Cookies</a>. &copy; <?php echo $site->copyright()->html(); ?><?php echo html($site->address()); ?></p>
 				</div>
 			</div>
 		</div>

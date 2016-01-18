@@ -33,3 +33,29 @@
 		@include leader($internal-spacing/2);
 	}
 }
+
+.footer__list {
+	@extend .as-list--typeset;
+	li {
+		@include trailer(10);
+	}
+	html.svg & {
+		.icon {
+			position: relative;
+			@include space-right(8);
+			top: -1px;
+		}
+	}
+}
+
+.footer__legal {
+	@extend .rule;
+	@extend .rule--overline;
+	display: block;
+	@include leader($para*2);
+	@include padding-leader($para*1.8);
+	a {
+		color: $base-color;
+		border-bottom: 1px solid $base-color;
+	}
+}

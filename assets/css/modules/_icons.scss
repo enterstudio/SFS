@@ -7,6 +7,8 @@
 	vertical-align: middle; 
 	overflow: hidden;
 	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
 	line-height: 0; // Bit dirty but works fine for keeping things inline
 	// Position text within em and removed from view
 	em {
@@ -21,12 +23,13 @@
 // Specific sizes
 // ------------------------------------------------------------
 
-$icon-sizes: 16, 24;
+$icon-sizes: 14;
 
 @each $icon-size in $icon-sizes {
     .icon--#{$icon-size} {
     	width: ($icon-size) + px;
     	height: ($icon-size) + px;
+    	background-size: ($icon-size) + px ($icon-size) + px;
     	svg {
 	    	width: ($icon-size) + px;
 			height: ($icon-size) + px;
@@ -39,16 +42,18 @@ $icon-sizes: 16, 24;
 // ------------------------------------------------------------
 
 // Please keep in alphabetical order
-//$icons:
+$icons:
+icon-tel-deadpool,
+icon-mail-deadpool;
 
 
 // Get svgs
 // ---------------------------------------
 
-//@each $icon in $icons {
-//	.#{$icon} {
-//		html.svg & {
-//			background-image: url("../svg/source/#{$icon}.svg");
-//		}
-//	}
-//}
+@each $icon in $icons {
+	.#{$icon} {
+		html.svg & {
+			background-image: url("../svg/source/#{$icon}.svg");
+		}
+	}
+}

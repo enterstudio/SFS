@@ -198,16 +198,16 @@ select, input, textarea, button {
   border-radius: 0; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #f4efef; }
+  color: #d3cbcb; }
 
 textarea {
   overflow: auto;
