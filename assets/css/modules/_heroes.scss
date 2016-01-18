@@ -12,6 +12,6 @@
 	padding-bottom: 2%;
 	@include respond-to($d-vp) {
 		padding-top: 15%;
-		padding-bottom: 5%;
+		padding-bottom: 40px;
 	}
 }

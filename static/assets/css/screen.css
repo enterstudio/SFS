@@ -442,6 +442,34 @@ input[type="file"] {
     .callout--pair .callout__cta .button {
       float: right; } }
 
+.footer {
+  position: relative; }
+
+.footer__banner {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.footer__contact {
+  position: relative;
+  z-index: 2;
+  padding: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 850px) {
+    .footer__contact {
+      margin-top: -33%;
+      min-height: 400px; } }
+
+.footer__details {
+  position: relative;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 850px) {
+    .footer__details {
+      margin-top: 3rem; } }
+
 .form {
   position: relative; }
 
@@ -465,12 +493,12 @@ input[type="file"] {
   position: relative; }
 
 .form-field--spaced {
-  padding-top: 6rem; }
+  padding-top: 1rem; }
 
 .form-item {
-  padding: 3rem;
+  padding: 1rem;
   display: block;
-  border: 2px solid #eae0e0;
+  border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -895,7 +923,7 @@ input[type="file"] {
   @media screen and (min-width: 850px) {
     .hero--default {
       padding-top: 15%;
-      padding-bottom: 5%; } }
+      padding-bottom: 40px; } }
 
 .icon, .as-svg {
   display: inline-block;

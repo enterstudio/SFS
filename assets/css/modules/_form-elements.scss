@@ -35,14 +35,15 @@
 
 // Space the form field
 .form-field--spaced {
-	@include padding-leader($internal-spacing);
+	@include padding-leader($internal-spacing/6);
 }
 
 // Standard form elements  
 .form-item {
-	@include padding-all($internal-spacing/2);
+	@include padding-all($internal-spacing/6);
 	display: block;
-	border: $default-border-width solid $default-border-color;
+	//border: $default-border-width solid $default-border-color;
+	border: none;
 	appearance: none;
 	background-color: #fff;
 	&::focus-inner {

@@ -1,0 +1,35 @@
+// ------------------------------------------------------------
+// Footer
+// ------------------------------------------------------------
+
+.footer {
+	position: relative;
+}
+
+.footer__banner {
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.footer__contact {
+	position: relative;
+	z-index: 2;
+	@include padding-all($internal-spacing/2);
+	@include leader($internal-spacing/2);
+	@include trailer($internal-spacing/2);
+	@include respond-to($d-vp) {
+		margin-top: -33%;
+		min-height: 400px;
+	}
+}
+
+.footer__details {
+	position: relative;
+	@include trailer($internal-spacing/2);
+	@include respond-to($d-vp) {
+		@include leader($internal-spacing/2);
+	}
+}
