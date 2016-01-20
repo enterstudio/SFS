@@ -1,0 +1,32 @@
+// ------------------------------------------------------------
+// Header
+// ------------------------------------------------------------
+
+.header {
+	@include padding-all(15);
+	@extend .fill-miami;
+	position: relative;
+	overflow: hidden;
+	@include respond-to($c-vp) {
+		@include padding-all(22);
+		@include padding-leader(18);
+	}
+	@include respond-to($d-vp) {
+		@include padding-all(25);
+		@include padding-leader(20);
+	}
+}
+
+.header__logo {
+	@extend .color-white;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	@include respond-to($c-vp) {
+		text-align: left;
+		display: inline-block;
+	}
+	@include link-active-styles {
+		@extend .color-white;
+	}
+}

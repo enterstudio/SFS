@@ -18,7 +18,7 @@ Yay! If you are seeing this, the installation of Kirby worked. :)
 
 ----
 
-Hero-text: Hero text here
+Hero-text: Advice and guidance on finding funds for improving facilities for Sports Clubs and Community Projects
 
 ----
 

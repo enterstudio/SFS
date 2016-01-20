@@ -34,3 +34,11 @@ fields:
     label: Logo image position 4
     type: select
     options: images
+    
+  snippet_b:
+    type: headline
+    label: Site-wide images
+  img_footer:
+    label: Footer image
+    type: select
+    options: images

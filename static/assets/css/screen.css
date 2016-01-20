@@ -247,8 +247,11 @@ input[type="file"] {
   line-height: 0.9765625; }
   @media screen and (min-width: 600px) {
     .as-heading-headline, .is-typeset .headline {
+      font-size: 4.4rem; } }
+  @media screen and (min-width: 850px) {
+    .as-heading-headline, .is-typeset .headline {
       font-size: 5.6rem;
-      line-height: 0.4464285714; }
+      line-height: 0.8928571429; }
       .as-heading-headline:before, .is-typeset .headline:before {
         margin-bottom: 32px; } }
 
@@ -259,10 +262,10 @@ input[type="file"] {
       margin-top: 5.6rem; } }
 
 .as-heading-headline--trailer, .is-typeset .headline {
-  margin-bottom: 1.8285714286rem; }
+  margin-bottom: 1.6rem; }
   @media screen and (min-width: 600px) {
     .as-heading-headline--trailer, .is-typeset .headline {
-      margin-bottom: 2.8rem; } }
+      margin-bottom: 2.24rem; } }
 
 .as-heading-large, .is-typeset h1, .is-typeset h2, .is-typeset h3, .is-typeset h4, .is-typeset h5, .is-typeset h6 {
   font-size: 3.2rem;
@@ -407,7 +410,7 @@ input[type="file"] {
     background-size: 18px 12.5px; }
   .button:hover, .button:focus, .button:active {
     color: #fff;
-    background-color: #120000; }
+    background-color: #5c24b5; }
 
 .button--block {
   display: block;
@@ -950,6 +953,28 @@ html.svg .footer__list .icon, html.svg .footer__list .as-svg {
   min-width: 106%;
   left: -6%; }
 
+.header {
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden; }
+  @media screen and (min-width: 600px) {
+    .header {
+      padding: 2.2rem;
+      padding-top: 1.8rem; } }
+  @media screen and (min-width: 850px) {
+    .header {
+      padding: 2.5rem;
+      padding-top: 2rem; } }
+
+.header__logo {
+  font-weight: 600;
+  text-align: center;
+  display: block; }
+  @media screen and (min-width: 600px) {
+    .header__logo {
+      text-align: left;
+      display: inline-block; } }
+
 .hero {
   position: relative;
   z-index: 0; }
@@ -959,8 +984,42 @@ html.svg .footer__list .icon, html.svg .footer__list .as-svg {
   padding-bottom: 2%; }
   @media screen and (min-width: 850px) {
     .hero--default {
-      padding-top: 15%;
+      padding-top: 18%;
       padding-bottom: 40px; } }
+
+.hero--split {
+  overflow: hidden; }
+
+.hero__tile {
+  z-index: 1;
+  background-color: #ff5555; }
+  @media screen and (min-width: 600px) {
+    .hero__tile {
+      height: 500px;
+      width: 50%;
+      float: left;
+      display: inline-block;
+      position: relative; } }
+  .hero__tile:first-child {
+    background-color: #120000; }
+    @media screen and (max-width: 599px) {
+      .hero__tile:first-child {
+        display: none; } }
+
+.hero__tile__content {
+  padding: 3rem;
+  padding-left: 6%;
+  padding-right: 6%; }
+  @media screen and (min-width: 600px) {
+    .hero__tile__content {
+      padding: 15%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .hero__tile__content p {
+        max-width: 450px; } }
 
 .icon, .as-svg {
   display: inline-block;
@@ -1010,6 +1069,60 @@ html.svg .icon-mail-deadpool {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.navigation-primary {
+  position: relative;
+  margin-top: 1rem; }
+  @media screen and (min-width: 600px) {
+    .navigation-primary {
+      margin-top: 0;
+      position: absolute;
+      top: 18px;
+      right: 22px; } }
+  @media screen and (min-width: 850px) {
+    .navigation-primary {
+      top: 20px;
+      right: 25px; } }
+
+.navigation-primary__items {
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .navigation-primary__items {
+      text-align: left; } }
+
+.navigation-primary__item {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media screen and (min-width: 600px) {
+    .navigation-primary__item {
+      margin-left: 3rem;
+      margin-right: 0; } }
+  @media screen and (min-width: 850px) {
+    .navigation-primary__item {
+      margin-left: 5rem; } }
+  .navigation-primary__item a {
+    position: relative;
+    -webkit-transition: all ease-out 0.25s;
+            transition: all ease-out 0.25s; }
+    .navigation-primary__item a:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      position: relative;
+      -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+              transform: translateY(2px);
+      -webkit-transition: all ease-out 0.25s;
+              transition: all ease-out 0.25s; }
+    .navigation-primary__item a:hover:after, .navigation-primary__item a:focus:after, .navigation-primary__item a:active:after {
+      width: 100%; }
+
+.navigation-primary__item--active a:after {
+  width: 100%;
+  background-color: #ff5555; }
 
 .navigation-secondary__item {
   display: block; }
@@ -1093,6 +1206,7 @@ a.text-link {
   .is-typeset .fill-deadpool h6:before a.text-link, .as-heading-headline:before .is-typeset h6:before a.text-link, .is-typeset .as-heading-headline:before h6:before a.text-link, .is-typeset .headline:before h6:before a.text-link, .as-heading-large:before .is-typeset h6:before a.text-link, .is-typeset .as-heading-large:before h6:before a.text-link, .is-typeset h1:before h6:before a.text-link, .is-typeset h2:before h6:before a.text-link, .is-typeset h3:before h6:before a.text-link, .is-typeset h4:before h6:before a.text-link, .is-typeset h5:before h6:before a.text-link, .is-typeset h6:before h6:before a.text-link, .as-heading-medium:before .is-typeset h6:before a.text-link, .is-typeset .as-heading-medium:before h6:before a.text-link, .as-heading-small:before .is-typeset h6:before a.text-link, .is-typeset .as-heading-small:before h6:before a.text-link, .fill-deadpool .as-heading-medium:before a.text-link,
   .as-heading-headline:before .as-heading-medium:before a.text-link, .is-typeset .headline:before .as-heading-medium:before a.text-link, .as-heading-large:before .as-heading-medium:before a.text-link, .is-typeset h1:before .as-heading-medium:before a.text-link, .is-typeset h2:before .as-heading-medium:before a.text-link, .is-typeset h3:before .as-heading-medium:before a.text-link, .is-typeset h4:before .as-heading-medium:before a.text-link, .is-typeset h5:before .as-heading-medium:before a.text-link, .is-typeset h6:before .as-heading-medium:before a.text-link, .as-heading-medium:before .as-heading-medium:before a.text-link, .as-heading-small:before .as-heading-medium:before a.text-link, .fill-deadpool .as-heading-small:before a.text-link,
   .as-heading-headline:before .as-heading-small:before a.text-link, .is-typeset .headline:before .as-heading-small:before a.text-link, .as-heading-large:before .as-heading-small:before a.text-link, .is-typeset h1:before .as-heading-small:before a.text-link, .is-typeset h2:before .as-heading-small:before a.text-link, .is-typeset h3:before .as-heading-small:before a.text-link, .is-typeset h4:before .as-heading-small:before a.text-link, .is-typeset h5:before .as-heading-small:before a.text-link, .is-typeset h6:before .as-heading-small:before a.text-link, .as-heading-medium:before .as-heading-small:before a.text-link, .as-heading-small:before .as-heading-small:before a.text-link, .fill-miami a.text-link,
+  .header a.text-link,
   .fill-deadpool a.text-link, .as-heading-headline:before a.text-link, .is-typeset .headline:before a.text-link, .as-heading-large:before a.text-link, .is-typeset h1:before a.text-link, .is-typeset h2:before a.text-link, .is-typeset h3:before a.text-link, .is-typeset h4:before a.text-link, .is-typeset h5:before a.text-link, .is-typeset h6:before a.text-link, .as-heading-medium:before a.text-link, .as-heading-small:before a.text-link {
     color: #fff; }
     .fill-knight a.text-link:hover,
@@ -1132,8 +1246,11 @@ a.text-link {
     .is-typeset .fill-deadpool h6:before a.text-link:active, .as-heading-headline:before .is-typeset h6:before a.text-link:active, .is-typeset .as-heading-headline:before h6:before a.text-link:active, .is-typeset .headline:before h6:before a.text-link:active, .as-heading-large:before .is-typeset h6:before a.text-link:active, .is-typeset .as-heading-large:before h6:before a.text-link:active, .is-typeset h1:before h6:before a.text-link:active, .is-typeset h2:before h6:before a.text-link:active, .is-typeset h3:before h6:before a.text-link:active, .is-typeset h4:before h6:before a.text-link:active, .is-typeset h5:before h6:before a.text-link:active, .is-typeset h6:before h6:before a.text-link:active, .as-heading-medium:before .is-typeset h6:before a.text-link:active, .is-typeset .as-heading-medium:before h6:before a.text-link:active, .as-heading-small:before .is-typeset h6:before a.text-link:active, .is-typeset .as-heading-small:before h6:before a.text-link:active, .fill-deadpool .as-heading-medium:before a.text-link:active,
     .as-heading-headline:before .as-heading-medium:before a.text-link:active, .is-typeset .headline:before .as-heading-medium:before a.text-link:active, .as-heading-large:before .as-heading-medium:before a.text-link:active, .is-typeset h1:before .as-heading-medium:before a.text-link:active, .is-typeset h2:before .as-heading-medium:before a.text-link:active, .is-typeset h3:before .as-heading-medium:before a.text-link:active, .is-typeset h4:before .as-heading-medium:before a.text-link:active, .is-typeset h5:before .as-heading-medium:before a.text-link:active, .is-typeset h6:before .as-heading-medium:before a.text-link:active, .as-heading-medium:before .as-heading-medium:before a.text-link:active, .as-heading-small:before .as-heading-medium:before a.text-link:active, .fill-deadpool .as-heading-small:before a.text-link:active,
     .as-heading-headline:before .as-heading-small:before a.text-link:active, .is-typeset .headline:before .as-heading-small:before a.text-link:active, .as-heading-large:before .as-heading-small:before a.text-link:active, .is-typeset h1:before .as-heading-small:before a.text-link:active, .is-typeset h2:before .as-heading-small:before a.text-link:active, .is-typeset h3:before .as-heading-small:before a.text-link:active, .is-typeset h4:before .as-heading-small:before a.text-link:active, .is-typeset h5:before .as-heading-small:before a.text-link:active, .is-typeset h6:before .as-heading-small:before a.text-link:active, .as-heading-medium:before .as-heading-small:before a.text-link:active, .as-heading-small:before .as-heading-small:before a.text-link:active, .fill-miami a.text-link:hover,
+    .header a.text-link:hover,
     .fill-miami a.text-link:focus,
+    .header a.text-link:focus,
     .fill-miami a.text-link:active,
+    .header a.text-link:active,
     .fill-deadpool a.text-link:hover, .as-heading-headline:before a.text-link:hover, .is-typeset .headline:before a.text-link:hover, .as-heading-large:before a.text-link:hover, .is-typeset h1:before a.text-link:hover, .is-typeset h2:before a.text-link:hover, .is-typeset h3:before a.text-link:hover, .is-typeset h4:before a.text-link:hover, .is-typeset h5:before a.text-link:hover, .is-typeset h6:before a.text-link:hover, .as-heading-medium:before a.text-link:hover, .as-heading-small:before a.text-link:hover, .fill-deadpool a.text-link:focus, .as-heading-headline:before a.text-link:focus, .is-typeset .headline:before a.text-link:focus, .as-heading-large:before a.text-link:focus, .is-typeset h1:before a.text-link:focus, .is-typeset h2:before a.text-link:focus, .is-typeset h3:before a.text-link:focus, .is-typeset h4:before a.text-link:focus, .is-typeset h5:before a.text-link:focus, .is-typeset h6:before a.text-link:focus, .as-heading-medium:before a.text-link:focus, .as-heading-small:before a.text-link:focus, .fill-deadpool a.text-link:active, .as-heading-headline:before a.text-link:active, .is-typeset .headline:before a.text-link:active, .as-heading-large:before a.text-link:active, .is-typeset h1:before a.text-link:active, .is-typeset h2:before a.text-link:active, .is-typeset h3:before a.text-link:active, .is-typeset h4:before a.text-link:active, .is-typeset h5:before a.text-link:active, .is-typeset h6:before a.text-link:active, .as-heading-medium:before a.text-link:active, .as-heading-small:before a.text-link:active {
       border-bottom-color: #fff; }
 
@@ -1161,7 +1278,7 @@ a.text-link--post-icon {
   .is-typeset .fill-deadpool h5:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h5:before a.text-link--post-icon:after, .is-typeset .headline:before h5:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h5:before a.text-link--post-icon:after, .is-typeset h1:before h5:before a.text-link--post-icon:after, .is-typeset h2:before h5:before a.text-link--post-icon:after, .is-typeset h3:before h5:before a.text-link--post-icon:after, .is-typeset h4:before h5:before a.text-link--post-icon:after, .is-typeset h5:before h5:before a.text-link--post-icon:after, .is-typeset h6:before h5:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h5:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h5:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h6:before a.text-link--post-icon:after,
   .is-typeset .fill-deadpool h6:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h6:before a.text-link--post-icon:after, .is-typeset .headline:before h6:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h6:before a.text-link--post-icon:after, .is-typeset h1:before h6:before a.text-link--post-icon:after, .is-typeset h2:before h6:before a.text-link--post-icon:after, .is-typeset h3:before h6:before a.text-link--post-icon:after, .is-typeset h4:before h6:before a.text-link--post-icon:after, .is-typeset h5:before h6:before a.text-link--post-icon:after, .is-typeset h6:before h6:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h6:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h6:before a.text-link--post-icon:after, .fill-deadpool .as-heading-medium:before a.text-link--post-icon:after,
   .as-heading-headline:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-medium:before a.text-link--post-icon:after, .fill-deadpool .as-heading-small:before a.text-link--post-icon:after,
-  .as-heading-headline:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-small:before a.text-link--post-icon:after, .fill-miami a.text-link--post-icon:after {
+  .as-heading-headline:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-small:before a.text-link--post-icon:after, .fill-miami a.text-link--post-icon:after, .header a.text-link--post-icon:after {
     background: url(../svg/source/icon-arrow-right-deadpool.svg) transparent no-repeat right top; }
   .fill-deadpool a.text-link--post-icon:after, .as-heading-headline:before a.text-link--post-icon:after, .is-typeset .headline:before a.text-link--post-icon:after, .as-heading-large:before a.text-link--post-icon:after, .is-typeset h1:before a.text-link--post-icon:after, .is-typeset h2:before a.text-link--post-icon:after, .is-typeset h3:before a.text-link--post-icon:after, .is-typeset h4:before a.text-link--post-icon:after, .is-typeset h5:before a.text-link--post-icon:after, .is-typeset h6:before a.text-link--post-icon:after, .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before a.text-link--post-icon:after {
     background: url(../svg/source/icon-arrow-right-white.svg) transparent no-repeat right top; }
@@ -1256,13 +1373,13 @@ a.text-link--post-icon {
 .color-miami {
   color: #41474b; }
 
-.fill-miami {
+.fill-miami, .header {
   background-color: #41474b; }
 
 .rule-miami {
   border-color: #41474b; }
 
-.color-cotton {
+.color-cotton, .navigation-primary__item a {
   color: #d3cbcb; }
 
 .fill-cotton, .form-contact-minor .form-field {
@@ -1280,7 +1397,7 @@ a.text-link--post-icon {
 .rule-vapour {
   border-color: #f4efef; }
 
-.color-white {
+.color-white, .header__logo, .header__logo:hover, .header__logo:focus, .header__logo:active, .navigation-primary__item a:hover, .navigation-primary__item a:focus, .navigation-primary__item a:active, .navigation-primary__item--active a {
   color: #fff; }
 
 .fill-white {

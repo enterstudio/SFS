@@ -33,9 +33,11 @@
 	@include leading($beta/1.25); 
 	@extend %as-heading-rule-before;
 	@include respond-to($c-vp) {
+		@include font-size($beta + 12);  
+	}
+	@include respond-to($d-vp) {
 		@include font-size($alpha); 
-		@include leading($alpha); 
-		@extend %as-heading-rule-before;
+		@include leading($alpha/2); 
 		&:before {
 			margin-bottom: 32px;
 		}
@@ -48,9 +50,9 @@
 	}
 } 
 .as-heading-headline--trailer { 
-	@include trailer($beta/1.75); 
+	@include trailer($beta/2); 
 	@include respond-to($c-vp) {
-		@include trailer($alpha/2);
+		@include trailer($alpha/2.5);
 	}
 } 
 

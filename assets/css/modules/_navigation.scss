@@ -1,5 +1,76 @@
 // ------------------------------------------------------------
-// Navigation
+// Primary
+// ------------------------------------------------------------
+
+.navigation-primary {
+	position: relative;
+	@include leader(10);
+	@include respond-to($c-vp) {
+		margin-top: 0; 
+		position: absolute;
+		top: 18px;
+		right: 22px;
+	}
+	@include respond-to($d-vp) {
+		top: 20px;
+		right: 25px;
+	}
+}
+
+.navigation-primary__items {
+	text-align: center;
+	@include respond-to($c-vp) {
+		text-align: left;
+	}
+}
+
+.navigation-primary__item {
+	display: inline-block;
+	@include space-left(10);
+	@include space-right(10);
+	@include respond-to($c-vp) {
+		@include space-left(30);
+		margin-right: 0;
+	}
+	@include respond-to($d-vp) {
+		@include space-left(50);
+	}
+	a {
+		@extend .color-cotton;
+		position: relative;
+		transition: all ease-out 0.25s;
+		&:after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 2px;
+			background-color: #fff;
+			position: relative;
+			transform: translateY(2px);
+			transition: all ease-out 0.25s;
+		}
+		@include link-active-styles {
+			@extend .color-white;
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.navigation-primary__item--active {
+	a {
+		@extend .color-white;
+		&:after {
+			width: 100%;
+			background-color: $sfs-deadpool;
+		}
+	}
+}
+
+
+// ------------------------------------------------------------
+// Secondary
 // ------------------------------------------------------------
 
 .navigation-secondary {

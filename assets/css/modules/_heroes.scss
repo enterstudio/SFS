@@ -11,7 +11,44 @@
 	padding-top: 8%;
 	padding-bottom: 2%;
 	@include respond-to($d-vp) {
-		padding-top: 15%;
+		padding-top: 18%;
 		padding-bottom: 40px;
+	}
+}
+
+.hero--split {
+	overflow: hidden;
+}
+
+.hero__tile {
+	z-index: 1;
+	background-color: $sfs-deadpool;
+	@include respond-to($c-vp) {
+		height: 500px;
+		width: 50%;
+		float: left;
+		display: inline-block;
+		position: relative;
+	}
+	&:first-child {
+		background-color: $sfs-knight;
+		@include respond-to-max($c-vp) {
+			display: none;
+		}
+	}
+}
+
+.hero__tile__content {
+	@include padding-all($internal-spacing/2);
+	padding-left: $internal-spacing-percent;
+	padding-right: $internal-spacing-percent;
+	@include respond-to($c-vp) {
+		padding: 15%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		p {
+			max-width: 450px;
+		}
 	}
 }

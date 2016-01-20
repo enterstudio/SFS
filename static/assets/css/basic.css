@@ -282,8 +282,11 @@ input[type="file"] {
   line-height: 0.9765625; }
   @media screen and (min-width: 600px) {
     .as-heading-headline, .is-typeset .headline {
+      font-size: 4.4rem; } }
+  @media screen and (min-width: 850px) {
+    .as-heading-headline, .is-typeset .headline {
       font-size: 5.6rem;
-      line-height: 0.4464285714; }
+      line-height: 0.8928571429; }
       .as-heading-headline:before, .is-typeset .headline:before {
         margin-bottom: 32px; } }
 
@@ -294,10 +297,10 @@ input[type="file"] {
       margin-top: 5.6rem; } }
 
 .as-heading-headline--trailer, .is-typeset .headline {
-  margin-bottom: 1.8285714286rem; }
+  margin-bottom: 1.6rem; }
   @media screen and (min-width: 600px) {
     .as-heading-headline--trailer, .is-typeset .headline {
-      margin-bottom: 2.8rem; } }
+      margin-bottom: 2.24rem; } }
 
 .as-heading-large, .is-typeset h1, .is-typeset h2, .is-typeset h3, .is-typeset h4, .is-typeset h5, .is-typeset h6 {
   font-size: 3.2rem;

@@ -1,6 +1,5 @@
 <?php snippet('header') ?>
+<?php snippet('hero-default') ?>
 
-<h1><?php echo $page->title()->html() ?></h1>
-<?php echo $page->text()->kirbytext() ?>
 
 <?php snippet('footer') ?>

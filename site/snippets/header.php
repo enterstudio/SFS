@@ -24,10 +24,8 @@
 <div class="ui-canvas">
 	<a href="#pagecontent" class="skiplink" data-js="skiplink">Skip to main content</a>	
 	<header class="header" role="banner">
-		<!--
-		<a href="<?php echo url() ?>"><?php echo $site->title()->html() ?></a>
+		<a class="header__logo" href="<?php echo url() ?>"><?php echo $site->title()->html() ?></a>
 		<?php snippet('menu') ?>
-		-->
 	</header>
 	<!-- ID and -nofocus required for proper skiplink operation -->
 	<main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">
