@@ -15,3 +15,7 @@ Logo-c:
 ----
 
 Logo-d: 
+
+----
+
+Img-footer: 9533813644_c119579f53_o.jpg

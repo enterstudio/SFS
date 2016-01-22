@@ -15,3 +15,32 @@
 		@include padding-right($internal-spacing/2);
 	}
 }
+
+.aside__list {
+	html.svg & {
+		.icon {
+			position: absolute;
+			top: 50%;
+			margin-top: -9px;
+			left: 0;
+		}
+	}
+	li  {
+		position: relative;
+		&:first-child {
+			a, span {
+				@extend .rule--overline;
+			}
+		}
+	}
+	a, span {
+		@include padding-leader(8);
+		@include padding-trailer(8);
+		@extend .rule;
+		@extend .rule--underline;
+		display: block;
+		html.svg & {
+			@include padding-left(22);
+		}
+	}
+}

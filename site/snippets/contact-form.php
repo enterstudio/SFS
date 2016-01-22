@@ -1,4 +1,8 @@
+<?php if ($page->intendedTemplate() == "contact") { ?>
+<form method="post" class="form-contact" action="/process.php">
+<?php } else { ?>
 <form method="post" class="form-contact-minor" action="/process.php">
+<?php } ?>
 	<div class="form-field form-field--spaced">
 		<label class="form-label" for="Message">Message:</label>
 		<textarea class="form-item" name="Message" id="Message" required></textarea>

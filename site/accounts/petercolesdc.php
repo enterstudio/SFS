@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - snippets
   - home
   - services
-  - snippets
   - services/help-with-funding
   - services/project-management

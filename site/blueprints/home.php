@@ -4,7 +4,7 @@ title: Home
 pages: false
 files: true
   max: 5
-  size: 500000
+  size: 1000000
   type:
     - image
   fields: 

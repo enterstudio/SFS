@@ -3,6 +3,7 @@
 title: Snippets
 pages: false
 files: true
+  size: 1000000
   fields: 
     alt_text:
       label: Alternative text

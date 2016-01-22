@@ -1,7 +1,10 @@
+<?php 
+	$img = $pages->find('home');
+?>
 <div class="hero hero--split fill-deadpool">
-	<aside class="hero__tile">
-		IMg
-	</aside>
+<?php if($image = $img->image($img->hero_image())) :?>
+	<aside class="hero__tile" style="background-image: url(<?php echo $image->crop(1280, 1100)->url() ?>);"></aside>
+<?php endif ?>
 	<div class="hero__tile">
 		<div class="hero__tile__content">
 			<h1 class="as-heading-headline as-heading-headline--trailer color-white"><?php echo $site->title() ?></h1>

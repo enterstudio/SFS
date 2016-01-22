@@ -6,6 +6,12 @@
 	position: relative;
 }
 
+.form-contact {
+	.button {
+		@include leader(24);
+	}
+}
+
 .form-contact-minor {
 	@include leader(20);
 	.button {
@@ -62,7 +68,7 @@
 .form-item {
 	@include padding-all($internal-spacing/6);
 	display: block;
-	border: none;
+	border: 1px solid $default-border-color;
 	appearance: none;
 	background-color: #fff;
 	.form-contact-minor & {
@@ -70,6 +76,7 @@
 		display: inline-block;
 		width: 75%;
 		min-height: 55px;
+		border: none;
 	}
 	&::focus-inner {
 	    border: 0;
@@ -84,6 +91,9 @@
 textarea.form-item {
 	.form-contact-minor & {
 		height: 180px;
+	}
+	.form-contact & {
+		height: 250px;
 	}
 }
 

@@ -14,6 +14,9 @@
 		padding-top: 18%;
 		padding-bottom: 40px;
 	}
+	@include respond-to($e-vp) {
+		padding-top: 10%;
+	}
 }
 
 .hero--split {
@@ -23,12 +26,19 @@
 .hero__tile {
 	z-index: 1;
 	background-color: $sfs-deadpool;
+	@extend .background-cover;
 	@include respond-to($c-vp) {
-		height: 500px;
+		height: 450px;
 		width: 50%;
 		float: left;
 		display: inline-block;
 		position: relative;
+	}
+	@include respond-to($d-vp) {
+		height: 550px;
+	}
+	@include respond-to($e-vp) {
+		height: 650px;
 	}
 	&:first-child {
 		background-color: $sfs-knight;
@@ -47,6 +57,11 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		max-width: 750px;
 		p {
 			max-width: 450px;
 		}
