@@ -16,6 +16,15 @@ picture img 	{ @extend %max-width; }
 	&:first-of-type {
 		margin-left: 0;
 	}
+	.callout--logos & {
+		width: 30%;
+		max-width: 125px;
+		height: auto;
+		margin-left: 2.5%;
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
 }
 
 // Basic responsive videos

@@ -45,7 +45,8 @@ a.text-link--post-icon {
 		}
 	}
 	.fill-knight &,
-	.fill-miami & {
+	.fill-miami &,
+	.fill-white & {
 		&:after {
 			background: url(../svg/source/icon-arrow-right-deadpool.svg) transparent no-repeat right top;
 		}
@@ -84,6 +85,10 @@ a.text-link--post-icon {
 	position: relative;
 	@extend .max-meter;
 	@extend .max-meter--center;
+	&.callout--pos2 {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	&:before {
 		html.svg & {
 			background-image: url(../svg/source/icon-blockquote-deadpool.svg);

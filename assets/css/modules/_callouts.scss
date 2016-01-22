@@ -12,6 +12,48 @@
 	}
 }
 
+.callout--logos {
+	@include trailer($internal-spacing/2);
+	@include respond-to-max($d-vp) {
+		padding: 0;
+		@include leader($internal-spacing/2);
+		//@include trailer($internal-spacing);
+	}
+}
+
+.callout--pos1 {
+	z-index: 2;
+	margin-top: -10px;
+	@include respond-to($c-vp) {
+		margin-top: -30px;
+	}
+	@include respond-to($d-vp) {
+		margin-top: -60px;
+		min-height: 450px;
+	}
+	.text-link {
+		@extend .color-deadpool;
+		@include respond-to($d-vp) {
+			position: absolute;
+			bottom: 30px;
+			left: 30px;
+		}
+	}
+}
+
+.callout--pos2 {
+	z-index: 2;
+	@include trailer($internal-spacing/2);
+	@include respond-to($d-vp) {
+		position: absolute;
+		bottom: -30%;
+	}
+	@include respond-to($e-vp) {
+		position: absolute;
+		bottom: -40%;
+	}
+}
+
 .callout--pair {
 	.callout__cta {
 		@include leader(20);

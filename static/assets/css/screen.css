@@ -445,6 +445,41 @@ html.svg .aside__list .icon, html.svg .aside__list .as-svg {
     margin-top: 1.6rem;
     display: inline-block; }
 
+.callout--logos {
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 849px) {
+    .callout--logos {
+      padding: 0;
+      margin-top: 3rem; } }
+
+.callout--pos1 {
+  z-index: 2;
+  margin-top: -10px; }
+  @media screen and (min-width: 600px) {
+    .callout--pos1 {
+      margin-top: -30px; } }
+  @media screen and (min-width: 850px) {
+    .callout--pos1 {
+      margin-top: -60px;
+      min-height: 450px; } }
+  @media screen and (min-width: 850px) {
+    .callout--pos1 .text-link {
+      position: absolute;
+      bottom: 30px;
+      left: 30px; } }
+
+.callout--pos2 {
+  z-index: 2;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 850px) {
+    .callout--pos2 {
+      position: absolute;
+      bottom: -30%; } }
+  @media screen and (min-width: 990px) {
+    .callout--pos2 {
+      position: absolute;
+      bottom: -40%; } }
+
 .callout--pair .callout__cta {
   margin-top: 2rem; }
 
@@ -1098,6 +1133,13 @@ html.svg .icon-mail-deadpool {
   margin-top: 1.5rem; }
   .media-logo:first-of-type {
     margin-left: 0; }
+  .callout--logos .media-logo {
+    width: 30%;
+    max-width: 125px;
+    height: auto;
+    margin-left: 2.5%; }
+    .callout--logos .media-logo:first-of-type {
+      margin-left: 0; }
 
 .media-video-wrapper {
   position: relative;
@@ -1319,7 +1361,9 @@ a.text-link--post-icon {
   .is-typeset .fill-deadpool h5:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h5:before a.text-link--post-icon:after, .is-typeset .headline:before h5:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h5:before a.text-link--post-icon:after, .is-typeset h1:before h5:before a.text-link--post-icon:after, .is-typeset h2:before h5:before a.text-link--post-icon:after, .is-typeset h3:before h5:before a.text-link--post-icon:after, .is-typeset h4:before h5:before a.text-link--post-icon:after, .is-typeset h5:before h5:before a.text-link--post-icon:after, .is-typeset h6:before h5:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h5:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h5:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h5:before a.text-link--post-icon:after, .fill-deadpool .is-typeset h6:before a.text-link--post-icon:after,
   .is-typeset .fill-deadpool h6:before a.text-link--post-icon:after, .as-heading-headline:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-headline:before h6:before a.text-link--post-icon:after, .is-typeset .headline:before h6:before a.text-link--post-icon:after, .as-heading-large:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-large:before h6:before a.text-link--post-icon:after, .is-typeset h1:before h6:before a.text-link--post-icon:after, .is-typeset h2:before h6:before a.text-link--post-icon:after, .is-typeset h3:before h6:before a.text-link--post-icon:after, .is-typeset h4:before h6:before a.text-link--post-icon:after, .is-typeset h5:before h6:before a.text-link--post-icon:after, .is-typeset h6:before h6:before a.text-link--post-icon:after, .as-heading-medium:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-medium:before h6:before a.text-link--post-icon:after, .as-heading-small:before .is-typeset h6:before a.text-link--post-icon:after, .is-typeset .as-heading-small:before h6:before a.text-link--post-icon:after, .fill-deadpool .as-heading-medium:before a.text-link--post-icon:after,
   .as-heading-headline:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-medium:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-medium:before a.text-link--post-icon:after, .fill-deadpool .as-heading-small:before a.text-link--post-icon:after,
-  .as-heading-headline:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-small:before a.text-link--post-icon:after, .fill-miami a.text-link--post-icon:after, .header a.text-link--post-icon:after {
+  .as-heading-headline:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset .headline:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-large:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h1:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h2:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h3:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h4:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h5:before .as-heading-small:before a.text-link--post-icon:after, .is-typeset h6:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-medium:before .as-heading-small:before a.text-link--post-icon:after, .as-heading-small:before .as-heading-small:before a.text-link--post-icon:after, .fill-miami a.text-link--post-icon:after,
+  .header a.text-link--post-icon:after,
+  .fill-white a.text-link--post-icon:after {
     background: url(../svg/source/icon-arrow-right-deadpool.svg) transparent no-repeat right top; }
   .fill-deadpool a.text-link--post-icon:after, .as-heading-headline:before a.text-link--post-icon:after, .is-typeset .headline:before a.text-link--post-icon:after, .as-heading-large:before a.text-link--post-icon:after, .is-typeset h1:before a.text-link--post-icon:after, .is-typeset h2:before a.text-link--post-icon:after, .is-typeset h3:before a.text-link--post-icon:after, .is-typeset h4:before a.text-link--post-icon:after, .is-typeset h5:before a.text-link--post-icon:after, .is-typeset h6:before a.text-link--post-icon:after, .as-heading-medium:before a.text-link--post-icon:after, .as-heading-small:before a.text-link--post-icon:after {
     background: url(../svg/source/icon-arrow-right-white.svg) transparent no-repeat right top; }
@@ -1337,6 +1381,9 @@ a.text-link--post-icon {
 
 .as-blockquote, .is-typeset blockquote {
   position: relative; }
+  .as-blockquote.callout--pos2, .is-typeset blockquote.callout--pos2 {
+    margin-left: 0;
+    margin-right: 0; }
   html.svg .as-blockquote:before, html.svg .is-typeset blockquote:before, .is-typeset html.svg blockquote:before {
     background-image: url(../svg/source/icon-blockquote-deadpool.svg);
     background-position: center top;
@@ -1384,7 +1431,7 @@ a.text-link--post-icon {
 .background-anchor-center-right {
   background-position: center right; }
 
-.color-deadpool, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active {
+.color-deadpool, .callout--pos1 .text-link, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active {
   color: #ff5555; }
 
 .fill-deadpool, .as-heading-headline:before, .is-typeset .headline:before, .as-heading-large:before, .is-typeset h1:before, .is-typeset h2:before, .is-typeset h3:before, .is-typeset h4:before, .is-typeset h5:before, .is-typeset h6:before, .as-heading-medium:before, .as-heading-small:before {

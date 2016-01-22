@@ -26,15 +26,15 @@ Hero-image: 13955148302_e8963fff75_o.jpg
 
 ----
 
-Services-text: Services text here
+Services-text: Sporting Partnerships Financial Services Advisers all share and adhere to our company standards, training and compliance requirements and our client promise.
 
 ----
 
-Services-quote: Quote here
+Services-quote: A short testimonial (and I mean short) can go here
 
 ----
 
-Services-citation: Citation here
+Services-citation: Joe Bloggs. Hinton Charterhouse FC
 
 ----
 

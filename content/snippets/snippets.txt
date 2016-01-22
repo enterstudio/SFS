@@ -10,11 +10,11 @@ Logo-b: test2.png
 
 ----
 
-Logo-c: 
+Logo-c: test.png
 
 ----
 
-Logo-d: 
+Logo-d: test2.png
 
 ----
 
