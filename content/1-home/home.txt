@@ -42,8 +42,12 @@ Case-study: chard-fc
 
 ----
 
-Section1-image: 
+Section1-image: 13955148302_e8963fff75_o.jpg
 
 ----
 
-About-text: About text here
+About-text: Sporting Partnerships Financial Services Advisers all share and adhere to our company standards, training and compliance requirements and our client promise.
+
+----
+
+About-case-study: old-abbotonains-fc

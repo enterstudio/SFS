@@ -480,6 +480,25 @@ html.svg .aside__list .icon, html.svg .aside__list .as-svg {
       position: absolute;
       bottom: -40%; } }
 
+@media screen and (min-width: 850px) {
+  .callout--pos3 {
+    min-height: 350px; } }
+
+@media screen and (min-width: 850px) {
+  .callout--pos3 .text-link {
+    position: absolute;
+    bottom: 30px;
+    left: 30px; } }
+
+.callout--pos4 {
+  z-index: 3; }
+  @media screen and (min-width: 600px) {
+    .callout--pos4 {
+      padding: 6rem; } }
+  @media screen and (min-width: 850px) {
+    .callout--pos4 {
+      margin-top: -60px; } }
+
 .callout--pair .callout__cta {
   margin-top: 2rem; }
 
@@ -498,13 +517,6 @@ html.svg .aside__list .icon, html.svg .aside__list .as-svg {
 
 .footer {
   position: relative; }
-
-.footer__banner {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: auto; }
 
 .footer__contact {
   position: relative;
@@ -1067,8 +1079,11 @@ html.svg .footer__list .icon, html.svg .footer__list .as-svg {
       position: relative; } }
   @media screen and (min-width: 850px) {
     .hero__tile {
-      height: 550px; } }
+      height: 520px; } }
   @media screen and (min-width: 990px) {
+    .hero__tile {
+      height: 580px; } }
+  @media screen and (min-width: 1290px) {
     .hero__tile {
       height: 650px; } }
   .hero__tile:first-child {
@@ -1140,6 +1155,22 @@ html.svg .icon-mail-deadpool {
     margin-left: 2.5%; }
     .callout--logos .media-logo:first-of-type {
       margin-left: 0; }
+
+.media-square {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.media-square--hp {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+  @media screen and (min-width: 850px) {
+    .media-square--hp {
+      display: block;
+      float: none;
+      width: 100%; } }
 
 .media-video-wrapper {
   position: relative;
@@ -1254,6 +1285,23 @@ html.svg .icon-mail-deadpool {
 .section {
   position: relative;
   z-index: 2; }
+
+.section-banner, .footer__banner {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.section--stack-lowz {
+  z-index: 0; }
+
+.section--about {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media screen and (min-width: 850px) {
+    .section--about {
+      padding: 0; } }
 
 .max-meter, .as-blockquote, .is-typeset blockquote {
   max-width: 760px; }
@@ -1431,7 +1479,7 @@ a.text-link--post-icon {
 .background-anchor-center-right {
   background-position: center right; }
 
-.color-deadpool, .callout--pos1 .text-link, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active {
+.color-deadpool, .callout--pos1 .text-link, .callout--pos3 .text-link, .navigation-secondary__item a:hover, .navigation-secondary__item a:focus, .navigation-secondary__item a:active {
   color: #ff5555; }
 
 .fill-deadpool, .as-heading-headline:before, .is-typeset .headline:before, .as-heading-large:before, .is-typeset h1:before, .is-typeset h2:before, .is-typeset h3:before, .is-typeset h4:before, .is-typeset h5:before, .is-typeset h6:before, .as-heading-medium:before, .as-heading-small:before {

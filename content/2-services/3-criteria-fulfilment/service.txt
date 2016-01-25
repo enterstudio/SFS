@@ -1,0 +1,29 @@
+Title: Criteria fulfilment
+
+----
+
+Text: Some page text
+
+----
+
+Case-study: 
+
+----
+
+Service-quote: 
+
+----
+
+Service-citation: 
+
+----
+
+Line-seo: 
+
+----
+
+Description: 
+
+----
+
+Keywords: 

@@ -95,3 +95,13 @@ fields:
     size: small
     buttons: false
     required: true
+  about_case_study:
+    label: Featured case study
+    type: select
+    default: architecture
+    options: query
+    query: 
+      page: about
+      fetch: children
+      value: '{{uid}}'
+      text: '{{title}}'

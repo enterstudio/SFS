@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - home
+  - services/criteria-fulfilment
   - snippets
   - services
   - services/help-with-funding
-  - services/project-management

@@ -27,6 +27,24 @@ picture img 	{ @extend %max-width; }
 	}
 }
 
+.media-square {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.media-square--hp {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	@include respond-to($d-vp) {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
 // Basic responsive videos
 // ------------------------------------------------------------
 

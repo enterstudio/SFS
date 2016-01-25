@@ -6,3 +6,23 @@
 	position: relative;
 	z-index: 2;
 }
+
+.section-banner {
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.section--stack-lowz {
+	z-index: 0;
+}
+
+.section--about {
+	@include padding-leader(20);
+	@include padding-trailer(20);
+	@include respond-to($d-vp) {
+		padding: 0;
+	}
+}
