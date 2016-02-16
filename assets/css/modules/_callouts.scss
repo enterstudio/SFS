@@ -46,11 +46,11 @@
 	@include trailer($internal-spacing/2);
 	@include respond-to($d-vp) {
 		position: absolute;
-		bottom: -30%;
+		bottom: -50%;
 	}
 	@include respond-to($e-vp) {
 		position: absolute;
-		bottom: -40%;
+		//bottom: -40%;
 	}
 }
 

@@ -5,7 +5,7 @@ pages: true
   template: case-study
   max: 3
 files: true
-  max: 5
+  max: 2
   size: 500000
   type:
     - image
@@ -24,6 +24,14 @@ fields:
       - bold
       - link
       - email
+  profile_image1:
+    label: Steve image
+    type: select
+    options: images
+  profile_image2:
+    label: Martin image
+    type: select
+    options: images
   line-seo:
     type: line
   description:

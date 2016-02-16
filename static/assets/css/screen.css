@@ -402,6 +402,18 @@ html.svg .aside__list .icon, html.svg .aside__list .as-svg {
   html.svg .aside__list a, html.svg .aside__list span {
     padding-left: 2.2rem; }
 
+.aside__profiles {
+  overflow: hidden; }
+
+.aside__profile {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+
+.aside__profiles__name {
+  display: block;
+  font-weight: 600; }
+
 .button {
   background: transparent;
   border: none;
@@ -474,11 +486,10 @@ html.svg .aside__list .icon, html.svg .aside__list .as-svg {
   @media screen and (min-width: 850px) {
     .callout--pos2 {
       position: absolute;
-      bottom: -30%; } }
+      bottom: -50%; } }
   @media screen and (min-width: 990px) {
     .callout--pos2 {
-      position: absolute;
-      bottom: -40%; } }
+      position: absolute; } }
 
 @media screen and (min-width: 850px) {
   .callout--pos3 {
@@ -1140,19 +1151,19 @@ html.svg .icon-mail-deadpool {
   background-image: url("../svg/source/icon-mail-deadpool.svg"); }
 
 .media-logo {
-  width: 125px;
-  height: 125px;
+  width: 110px;
+  height: 110px;
   display: block;
   float: left;
-  margin-left: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 1.5rem; }
-  .media-logo:first-of-type {
-    margin-left: 0; }
   .callout--logos .media-logo {
     width: 30%;
     max-width: 125px;
     height: auto;
-    margin-left: 2.5%; }
+    margin-left: 2.5%;
+    margin-right: 0; }
     .callout--logos .media-logo:first-of-type {
       margin-left: 0; }
 

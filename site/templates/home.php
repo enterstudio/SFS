@@ -15,7 +15,7 @@
 		</div>
 		<div class="colspan16-8 as-grid">
 			<aside class="callout callout--logos push16-1">
-				<h3 class="as-heading-large as-heading-large--trailer">Selected clients</h3>
+				<h3 class="as-heading-large as-heading-large--trailer">We've worked with</h3>
 				<?php snippet('logos') ?>
 			</aside>
 			<div class="callout--pos2 colspan16-6">
@@ -32,6 +32,7 @@
 
 <?php 
 	$img = $pages->find('home');
+	$img2 = $pages->find('about');
 ?>
 
 <?php if($image = $img->image($img->section1_image())) :?>
@@ -43,8 +44,12 @@
 <div class="section section--about fill-vapour">
 	<div class="row">
 		<div class="colspan16-2 as-grid">
-			<img class="media-square media-square--hp" src="http://filldunphy.com/i/400/400" alt=""/>
-			<img class="media-square media-square--hp" src="http://filldunphy.com/i/400/400" alt=""/>
+			<?php if($image = $img2->image($img2->profile_image1())) :?>
+				<img class="media-square media-square--hp" src="<?php echo $image->crop(400, 400)->url() ?>" alt="<?php echo $image->alt_text() ?>"/>
+			<?php endif ?>
+			<?php if($image = $img2->image($img2->profile_image2())) :?>
+				<img class="media-square media-square--hp" src="<?php echo $image->crop(400, 400)->url() ?>" alt="<?php echo $image->alt_text() ?>"/>
+			<?php endif ?>
 		</div>
 		<div class="colspan16-7 as-grid">
 			<section class="callout callout--pos3 fill-white">

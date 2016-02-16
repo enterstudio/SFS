@@ -7,8 +7,7 @@ password: >
 language: en
 role: admin
 history:
+  - terms
   - home
   - services/criteria-fulfilment
-  - snippets
-  - services
-  - services/help-with-funding
+  - about/old-abbotonains-fc

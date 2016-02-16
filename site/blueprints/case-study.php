@@ -19,14 +19,6 @@ fields:
     type: info
     text: >
       <p>This page outlines a case study for an individual club or organisation. It seeks to detail the process you undertook, and tell the story.</p>
-  page_image:
-    label: Page image
-    type: select
-    options: images
-  client_logo:
-    label: Organisation logo
-    type: select
-    options: images
   text_1:
     label: Overview text
     type:  textarea

@@ -30,11 +30,11 @@ Services-text: Sporting Partnerships Financial Services Advisers all share and a
 
 ----
 
-Services-quote: A short testimonial (and I mean short) can go here
+Services-quote: Their time and expertise in assisting us through the grant process was a big help
 
 ----
 
-Services-citation: Joe Bloggs. Hinton Charterhouse FC
+Services-citation: Martin McConachie, Secretary Oldland Abbotonians FC
 
 ----
 
@@ -50,4 +50,4 @@ About-text: Sporting Partnerships Financial Services Advisers all share and adhe
 
 ----
 
-About-case-study: old-abbotonains-fc
+About-case-study: chard-fc

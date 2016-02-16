@@ -44,3 +44,23 @@
 		}
 	}
 }
+
+.aside__profiles {
+	overflow: hidden;
+}
+
+.aside__profile {
+	//display: block;
+	//float: none;
+	//width: 100%;
+	//@include respond-to($d-vp) {
+		display: inline-block;
+		float: left;
+		width: 50%;
+	//}
+}
+
+.aside__profiles__name {
+	display: block;
+	font-weight: 600;
+}

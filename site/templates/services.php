@@ -34,7 +34,7 @@
 <div class="section fill-white">
 	<div class="row padd-both rule rule--overline">
 		<div class="colspan12-5 colspan16-5 as-grid">
-			<h4 class="as-heading-large as-heading-large--trailer">Who we work with</h4>
+			<h4 class="as-heading-large as-heading-large--trailer">We've worked with</h4>
 		</div>
 		<div class="colspan12-7 colspan16-11 as-grid">
 			<?php snippet('logos') ?>
