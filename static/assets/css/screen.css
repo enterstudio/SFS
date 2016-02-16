@@ -335,26 +335,24 @@ input[type="file"] {
   margin-bottom: 0; }
 
 .alert {
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #120000;
   background-color: #fff;
-  display: block; }
-  .form .alert {
-    margin-bottom: 3.75rem; }
+  display: block;
+  border: 1px solid #eae0e0; }
 
 .alert--notice, .alert--error, .alert--success {
   padding-left: 3rem;
   padding-right: 3rem;
-  color: #120000;
   border-left: 3px solid #ffff00; }
 
 .alert--error {
-  border-color: #ffa757;
-  color: #ffa757; }
+  border-color: #ffa757; }
 
 .alert--success {
-  border-color: #00ff18;
-  color: #00ff18; }
+  border-color: #00ff18; }
 
 .article {
   position: relative; }

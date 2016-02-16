@@ -1,7 +1,7 @@
 <?php
-	$EmailFrom = "sup@fffunction.co";
-	$EmailTo = "pete@fffunction.co";
-	$Subject = "Enquiry from sportfinancialservices.co.uk";
+	$EmailFrom = "enquiries@sportsfinancialservices.com";
+	$EmailTo = "admin@sportsfinancialservices.com";
+	$Subject = "Enquiry from sportsfinancialservices.com";
 	$Name = Trim(stripslashes($_POST['Name'])); 
 	$Tel = Trim(stripslashes($_POST['Tel'])); 
 	$Email = Trim(stripslashes($_POST['Email'])); 

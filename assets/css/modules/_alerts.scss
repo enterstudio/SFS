@@ -3,30 +3,27 @@
 // ------------------------------------------------------------
 
 .alert {
-	@include padding-trailer($internal-spacing/2);
-	@include padding-leader($internal-spacing/2);
+	@include padding-trailer($internal-spacing/4);
+	@include padding-leader($internal-spacing/4);
+	@include trailer($base-rhythm);
+	color: $sfs-knight;
 	background-color: #fff;
 	display: block;
-	.form & {
-		@include trailer($base-rhythm*1.5);
-	}
+	border: 1px solid $default-border-color;
 }
 
 .alert--notice {
 	@include padding-left($internal-spacing/2);
 	@include padding-right($internal-spacing/2);
-	color: $heading-color;
 	border-left: 3px solid $warning;
 }
 
 .alert--error {
 	@extend .alert--notice;
 	border-color: $error;
-	color: $error;
 }
 
 .alert--success {
 	@extend .alert--notice;
 	border-color: $success;
-	color: $success;
 }

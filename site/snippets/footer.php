@@ -5,7 +5,7 @@
 	
 	<?php if ($page->intendedTemplate() == "contact") { ?>
 		<div class="row">
-			<p class="footer__legal footer__legal--minor"><a href="/terms/">Terms &amp; Conditions</a>, <a href="/privacy/">Privacy</a>, <a href="/cookies/">Cookies</a>. &copy; <?php echo $site->copyright()->html(); ?><?php echo html($site->address()); ?></p>
+			<p class="footer__legal footer__legal--minor"><a href="/terms/">Terms &amp; Conditions</a> &copy; <?php echo $site->copyright()->html(); ?><?php echo html($site->address()); ?></p>
 		
 	<?php } else { ?>
 		

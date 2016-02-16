@@ -1,7 +1,11 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Site
-pages: default
+pages: 
+  template:
+    default
+    thanks
+    form-error
 files: false
 fields:
   title:

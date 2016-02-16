@@ -7,7 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - form-error
+  - thanks
+  - services
   - terms
   - home
-  - services/criteria-fulfilment
-  - about/old-abbotonains-fc

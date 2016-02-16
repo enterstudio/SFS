@@ -14,7 +14,7 @@ Contact-phone: 0117 1234 567
 
 ----
 
-Contact-email: enquiries@sportfinancialservices.com
+Contact-email: enquiries@sportsfinancialservices.com
 
 ----
 
@@ -22,4 +22,4 @@ Contact-address: 3 Newlands Grove, Keynsham, Bristol, BS31 1EE
 
 ----
 
-Title: Sport Financial Services
+Title: Sports Financial Services
